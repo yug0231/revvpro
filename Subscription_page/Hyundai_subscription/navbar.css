@@ -1,0 +1,551 @@
+/* Hyundai  landing page  */
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#hyundai_page_container {
+    margin: auto;
+    width: 100%;
+
+}
+
+/*nav bar*/
+
+#navbar {
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    padding: 8px;
+    box-shadow: 0px 0.5px 0px 0px rgb(202, 196, 196);
+    height: 4rem;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0px;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+}
+
+#innernav {
+
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* left navbar */
+#left-navbar {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 37%;
+    height: 90%;
+}
+
+.logo:nth-child(2) {
+    height: 38%;
+    border-left: 1px solid rgb(105, 105, 105);
+    margin-left: 8px;
+    width: 52%;
+    padding: 8px 12px;
+}
+
+
+/* right nav */
+#rightnav {
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.wb {
+    border: 1px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px;
+    margin: auto;
+    margin: 2px 20px;
+    color: black;
+    font-family: Poppins;
+}
+
+.loginlogo {
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wb:hover {
+    color: #1AC9B5;
+}
+
+.subscription-btn {
+    border: 1px solid #A8B5C0;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 6px;
+    margin: 5px 20px;
+    height: 40%;
+    vertical-align: middle;
+    color: black;
+}
+
+
+.subscription-btn:hover {
+    color: #1AC9B5;
+}
+
+
+/* Hyundai page 1st row */
+#home_page_1st_row {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: 140% 100%;
+    width: 100%;
+    display: flex;
+
+
+}
+
+/* banner-content */
+#content {
+
+    display: flex;
+    width: 82%;
+    justify-content: space-between;
+    /* font-size: 20px; */
+    margin: auto;
+    padding-top: 110px;
+
+
+}
+
+#left {
+    width: 60%;
+    height: 480px;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#right {
+    display: flex;
+    cursor: pointer;
+    width: 400px;
+    height: 40px;
+    padding: 30px 25px;
+    align-items: baseline;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, white, #e8e8e8);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.para1 {
+    font-size: 22px;
+    font: larger;
+    color: black;
+    font-family: Poppins;
+}
+
+.para2 {
+    font-size: 30px;
+    color: black;
+    font-family: Poppins;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+
+}
+
+#explore {
+    font-size: 22px;
+    color: #1caba2;
+    font-family: Poppins;
+}
+
+
+#home_page_1st_row_mahindra {
+    /* display: flex;
+    justify-content: space-between; */
+ 
+    margin: 0;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: 140% 100%;
+    width: 100%;
+
+    background: linear-gradient(transparent, transparent), url('../Hyundai_subscription/img/mahindra-home-background.jpg');
+}
+
+/* Mahindra home page */
+#home_page_1st_row_mahindra::after {
+    background: url('../Hyundai_subscription/img/Mahindra-XUV-500.png');
+    height: 242px;
+    content: "";
+    width: 502px;
+    top: 263px;
+    right: 60px;
+    position: absolute;
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+
+/* Hyundai page 2nd row */
+#work_feature_row {
+
+    /* border: 1px solid teal; */
+    width: 100%;
+    /* padding:40px 80px ; */
+}
+
+#row_container {
+    width: 82%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+#work_col_parent {
+    display: flex;
+
+    margin-top: 40px;
+
+}
+
+.work_col {
+    width: 400px;
+    height: 300px;
+
+}
+
+
+.icon-drop {
+
+    width: 100%;
+    border-radius: 50%;
+    margin: auto;
+
+
+}
+
+
+.work_col>p {
+    display: block;
+    margin-top: -15px;
+    font-size: 18px;
+}
+
+/* How it works icon */
+.icon {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: rgb(255, 255, 255);
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-shadow: rgb(0 0 0 / 25%) 0px 14px 45px, rgb(0 0 0 / 22%) 0px 10px 18px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    width: 50%;
+
+
+
+}
+
+.icon:hover {
+    background-color: #57cfcf;
+
+}
+
+/* .icon-drop, .icon:hover {
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-position: 50%;
+    background-position-x: 50%;
+    background-position-y: center;
+} */
+
+/* Hyundai FAQ row */
+#faq_parent {
+    width: 100%;
+    background-image: linear-gradient(white, #f3f3f3);
+}
+
+#faq_container {
+    width: 82%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.faq-summary {
+    list-style-type: none;
+}
+
+#viewAll {
+    margin-top: 80px;
+    margin-bottom: 55px;
+    background-color: white;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 15px 60px;
+}
+
+#viewAll>a {
+    text-decoration: none;
+    color: #089d8c;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+/* Bussiness News report row  */
+#news_report {
+    width: 100%;
+
+}
+
+#news_report_container {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    padding: 30px 0;
+
+}
+
+.new_col {
+    border-radius: 30px;
+    height: 100px;
+}
+
+.new_col:hover {
+    background-color: rgb(225, 221, 221);
+}
+
+.newsImg {
+    width: 100%;
+}
+
+/* Our journey row */
+#our-journey {
+    width: 100%;
+    background-image: linear-gradient(white, #f3f3f3);
+}
+
+#our-journey-content {
+    width: 82%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+#our-journey-icon {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.customer-review {
+
+    margin-top: 28px;
+    margin-bottom: 45px;
+
+}
+
+.customer-review>p {
+    margin-top: -15px;
+    color: #4b4d5d;
+    font-weight: 500;
+}
+
+/* Customer feedback row */
+#customer-feedback {
+    width: 100%;
+
+}
+
+#customer-feedback-container {
+    width: 82%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 70px;
+
+}
+
+#customer-feedback-container>#feedback-quots {
+    margin-top: 10px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    padding: 20px;
+}
+
+/* Footer city subscription */
+#city-subscription {
+    width: 100%;
+    background-color: #2a2b36;
+}
+
+#city-subscription-container {
+    width: 82%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.city-num {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.city-num>li>a {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+
+    /* opacity: .5; */
+    line-height: 2.30;
+    letter-spacing: normal;
+
+}
+
+.city-col>h3 {
+    color: rgb(238, 238, 238);
+}
+
+.city-num>li>a:hover {
+    color: white;
+}
+
+/* Footer row */
+#footer {
+    width: 100%;
+    background-color: #3d4250;
+
+}
+
+#footer-child-container {
+    width: 82%;
+    margin: auto;
+    display: flex;
+    /* border:1px solid blueviolet; */
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#footer-child-container>#footer-left-col,
+#footer-right-col {
+
+    /* border:1px solid greenyellow; */
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+#left-col-top {
+    width: 36%;
+}
+
+#left-col-top>#revv-logo {
+    width: 100%;
+
+    margin-bottom: 36px;
+}
+
+#social-media-logo {
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+
+
+#social-media-logo>.media-logo> {
+    width: 60%;
+
+}
+
+.media-logo {
+
+    background-color: #0ebaba;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border:1px solid yellow; */
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+#footer-right-col {
+    width: 28%;
+    margin-top: -8px;
+
+}
+
+#footer-right-col>h4 {
+    font-size: 25px;
+}
+
+#footer-right-col>h4:nth-child(2),
+p {
+    margin-top: -21px;
+
+}
+
+#footer-right-col>h4:last-child {
+    margin-top: 20px;
+
+}
+
+/* Footer text-content */
+#footer-text-parent {
+    width: 100%;
+
+}
+
+#footer-text-content {
+    width: 82%;
+    margin: auto;
+    text-align: justify;
+
+}
+
+.footer-content {
+    margin-top: -10px;
+    font-family: poppins;
+    color: #5d5e6f;
+}
+
+.footer-content-heading {
+    font-family: Poppins;
+    /* font-weight: 500; */
+    color: #1b1c24;
+}
