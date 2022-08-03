@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #box{
+           
+           display: flex;
+           flex-direction: column;
+          /*  border: 1px solid black;*/
+            width: 40%;
+        margin-left: 36%;
+        gap: 20px;
+        margin-top: 10%;
+            
+        }
+        #up_box{
+            display: flex;
+            justify-content: space-around;
+          /*  border: 1px solid rgb(241, 55, 55);*/
+
+        }
+        #down_box{
+            display: flex;
+          /*  border: 1px solid rgba(0, 16, 105, 0.493);*/
+            justify-content: space-around;
+            
+        }
+        #down_box>div{
+        /* border: 1px solid   green  ;*/
+         width: 40%;
+         padding: 10px 20px;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        img{
+            width: 40%;
+        }
+        #down_box>div:hover{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        h4{
+            color: #aaa;
+        }
+        #down_box>div>h3{
+            color: teal;
+            border-left: 2px solid teal;
+        }
+        #box+h3 {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+  
+</body>
+</html>
+<script>
+     
+    /*  <h3>13 Brand new Mahindra cars for subscription in Mumbai</h3>
+        <div id="up_box">
+            <img src="https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg" />
+            <div>
+                <h2>Mahindra XUV500</h2>
+                <p>Brand New / 2 Variants</p>
+            </div>
+        </div>
+        <div id="down_box">
+            <div>
+                <h4>Mahindra XUV500</h4>    
+                <h3>w5</h3>
+                <p>Diesel Mannual</p>
+                <h2>₹33,500/month</h2>
+                <h4>₹35,500</h4>
+            </div>
+            <div> <h4>Mahindra XUV500</h4>    
+                <h3>w5</h3>
+                <p>Diesel Mannual</p>
+                <h2>₹33,500/month</h2   >
+                <h4>₹35,500</h4></div>
+        </div>*/
+        var mahindraCarData=[
+    {
+        id:1,
+        image_url:"https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_Scorpio.jpg",
+        name:"Mahindra Scorpio",
+        price:"33,599",
+        StrikedoffPrice:"37,599",
+
+    },
+    {
+        id:2,
+        image_url:"https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_marazzo.jpg",
+        name:"Mahindra Marazzo",
+        price:"23,599",
+        StrikedoffPrice:"27,599",
+
+    },
+    {
+        id:3,
+        image_url:"https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+        name:"Mahindra XUV300",
+        price:"31,599" ,
+        StrikedoffPrice:"35,599",
+
+    },
+    {
+        id:4,
+        image_url:"https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+        name:"Mahindra XUV500",
+        price:"23,699" ,
+        StrikedoffPrice:"25,599" ,
+
+    },
+    {
+        id:5,
+        image_url:"https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_XUV_300.jpg",
+        name:"Mahindra XUV300",
+        price:"21,599" ,
+        StrikedoffPrice:"25,599",
+
+    },
+    {
+        id:6,
+        image_url:"https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/Hatchback_new/Mahindra_KUV100.jpg",
+        name:"Mahindra KUV",
+        price:"20,500" ,
+        StrikedoffPrice:"23,599",
+
+    },
+    {
+        id:7,
+        image_url:"https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_Alturas.jpg",
+        name:"Mahindra ALTURAS",
+        price:"71,599",
+        StrikedoffPrice:"89,599",
+
+    },
+    {
+        id:8,
+        image_url:"https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/Hatchback_new/Mahindra_KUV100.jpg",
+        name:"Mahindra KUV",
+        price:"20,500 ",
+        StrikedoffPrice:"23,599",
+
+    },
+]
+       // var data_cars=JSON.parse(localStorage.getItem("dataofcars"));
+       display_newcar();
+        function display_newcar(){
+            mahindraCarData.map(function(elem,index){
+                var h3=document.createElement("h3")
+                h3.innerText="13 Brand new Mahindra cars for subscription in Mumbai"
+
+                var up_box=document.createElement("div")
+                up_box.setAttribute("id","up_box")
+                var image=document.createElement("img")
+                image.setAttribute("src",elem.image_url)
+                image.setAttribute("alt",index)
+                var div_in=document.createElement("div")
+                var h2=document.createElement("h2")
+                h2.innerText=elem.name;
+                var p=document.createElement("p")
+                p.innerText="Brand New / 2 Variants"
+               var down_div=document.createElement("div")
+                down_div.setAttribute("id","down_div");
+
+
+                var div1=document.createElement("div")
+                var heading4=document.createElement("h4")
+                heading4.innerText=elem.name;
+                var type=document.createElement("h3")
+                type.innerText=elem.type;
+                var para_1=document.getElementById("p")
+                para_1.innerText="Diesel mannual"
+                var head=document.createElement("h2")
+                head.innerText=elem.price;
+                var h4=document.createElement("h4")
+                h4.innerText=elem.StrikedoffPrice;
+
+                var div2=document.createElement("div")
+                var heading5=document.createElement("h4")
+                heading5.innerText=elem.name;
+                var type_b=document.createElement("h3")
+                type_b.innerText=elem.type;
+                var para_2=document.getElementById("p")
+                para_2.innerText="Diesel mannual"
+                var head_2=document.createElement("h2")
+                head_2.innerText=elem.price;
+                var h4_2=document.createElement("h4")
+                h4_2.innerText=elem.StrikedoffPrice;
+                //appending>---<
+                div2.append(heading5,type_b,para_2,head_2,h4_2);
+                div1.append(heading4,type,para_1,head,h4);
+                down_div.append(div1,div2)
+              div_in.append(h2,p)
+              up_box.append(image,div_in)
+              document.getElementById("box").append(up_box,down_div);
+
+            })
+        }   
+</script>
