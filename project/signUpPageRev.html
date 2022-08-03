@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage For Revv</title>
+<style>
+        
+        #navbar{
+            width: 100%;
+            height: 50px;
+    
+            position: fixed;
+            display: flex;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            padding: 0px 60px;
+            
+        }
+      
+        #clickonsignin{
+            display: flex;
+            font-size: 13px;
+            margin-left: 2%;
+            margin-top: 1%;
+            text-decoration: none;color: black;height: 30px;
+        }
+      
+        p{
+            margin: auto;
+            font-size: 15px;
+            
+        }
+        *:focus { 
+            outline: none;
+        }
+       
+        #maincontainer{
+            width: 100%;
+            height: 100%;
+            background-color:rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+
+        }
+        #loginform{
+            width: 230px;
+            height: 400px;
+            background-color: white;
+            padding:  10px 40px 40px 20px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        #closeicon{
+            height: 15px;
+            width: 15px;
+            border: 1px solid red;
+            margin-left: 95px;
+            cursor: pointer;
+        }
+        #signupmaincontainer{
+            width: 100%;
+            height: 100%;
+            background-color:rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+
+        }
+        #signupform{
+            width: 230px;
+            height: 430px;
+            background-color: white;
+            padding:  10px 40px 40px 40px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        #signupcloseicon{
+            height: 15px;
+            width: 15px;
+            border: 1px solid rgb(219, 219, 219);
+            margin-left: 95px;
+            cursor: pointer;
+        }
+        #buttonforsignup{
+            cursor: pointer;
+        }
+       
+        #loginenteremail{
+            height: 30px;
+            width: 240px;
+            border: 0px;
+            border-bottom: 1px solid rgb(212, 212, 212);
+            color: rgb(51, 50, 50);
+
+        }
+        #loginenteremail:focus{
+            border: 0px;
+           border-bottom: 2px solid rgb(9, 175, 252);
+           
+
+        }
+        #loginenterpassword{
+            height: 30px;
+            width: 240px;
+            margin-top: 40px;
+            border: 0px;
+            border-bottom: 1px solid rgb(212, 212, 212);
+        }
+        .myloginbutton{
+            border: 0px;
+            padding: 10px 35px;
+            background-color: rgb(0, 184, 184);
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        #signupcreatename{
+            height: 30px;
+            width: 240px;
+            border: 0px;
+            border-bottom: 1px solid rgb(212, 212, 212);
+            color: rgb(39, 39, 39);
+
+        }
+        #signupcreateemail{
+            height: 30px;
+            margin-top: 32px;
+            width: 240px;
+            border: 0px;
+            border-bottom: 1px solid rgb(212, 212, 212);
+            color: rgb(39, 39, 39);
+
+
+        }
+        #signupcreatepassword{
+            height: 30px;
+            width: 240px;
+            margin-top: 40px;
+            border: 0px;
+            border-bottom: 1px solid rgb(212, 212, 212);
+        }
+        #mybuttonforsignup{
+            border: 0px;
+            padding: 10px 35px;
+            background-color: rgb(0, 184, 184);
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+ 
+    </style>
+</head>
+<body>
+    <div>
+    <div id="navbar">
+        <div id="icon">
+           
+        </div>
+       
+        <a id="clickonsignin" href=""><img style="width: 20px;" src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" alt=""><p style="margin-right: 60px;">Login or Signup</p></a>
+    </div>
+    
+<!-- loginpopup -->
+    <div id="maincontainer">
+            <div id="loginform" >
+                <div style="display: flex;"><h4 style="margin-left: 90px;">LOGIN</h4><img id="closeicon" src="https://www.revv.co.in/imgs/cross.png" alt="x"></div>
+                
+                <form class="mylogin" action="">
+                    <input id="loginenteremail"  type="text" name="" placeholder="Enter Email">
+                    <input id="loginenterpassword" type="password" placeholder="Enter Password">
+                    
+                    <input class="myloginbutton" type="submit" title="Login" value="Login">
+                    <div style="font-size: small;" id="buttonforsignup" >Don't have a account yet ?<p style="color: rgb(0, 175, 175);display: inline;font-weight: bold;"> Sign Up</p></div>
+                    
+                </form>
+                <hr style="margin-left: 10px;">
+            <a href=""></a><div><img style="width: 225px;margin-left: 10px;" src="https://www.revv.co.in/imgs/google-login.png" alt=""></div></a>
+            <a href=""></a><div><img style="width: 225px;margin-left: 10px;" src="https://www.revv.co.in/imgs/facebook-icon.png" alt=""></div></a>
+            </div>
+    
+    </div>
+<!-- signup popup -->
+    <div id="signupmaincontainer">
+        <div id="signupform" >
+            <div style="display: flex;"><h4 style="margin-left: 90px;">SIGNUP</h4><img id="signupcloseicon" src="https://www.revv.co.in/imgs/cross.png" alt="x"></div>
+            
+            <form class="mysignup" action="">
+                <input id="signupcreatename" type="text" name="" placeholder="Enter Name">
+                <input id="signupcreateemail" type="text" name="" placeholder="Create Email">
+                <input id="signupcreatepassword" type="password" placeholder="Create Password">
+                <input id="mybuttonforsignup" type="submit" title="Login" value="Signup">
+                
+            </form>
+            <hr>
+            <a href=""></a><div><img style="width: 225px;" src="https://www.revv.co.in/imgs/google-login.png" alt=""></div></a>
+            <a href=""></a><div><img style="width: 225px;" src="https://www.revv.co.in/imgs/facebook-icon.png" alt=""></div></a>
+        </div>
+    
+    </div>
+  
+
+
+</body>
+</html>
+<script>
+    // script for popUp
+document.querySelector("#clickonsignin").addEventListener('click',function(event){
+    event.preventDefault()
+    document.querySelector("#maincontainer").style.display="flex"
+})
+
+document.querySelector("#closeicon").addEventListener('click',function(event){
+    event.preventDefault()
+    document.querySelector("#maincontainer").style.display="none"
+})
+
+document.querySelector("#buttonforsignup").addEventListener('click',function(event){
+    event.preventDefault()
+    document.querySelector("#signupmaincontainer").style.display="flex"
+})
+
+document.querySelector("#signupcloseicon").addEventListener('click',function(event){
+    event.preventDefault()
+    document.querySelector("#signupmaincontainer").style.display="none"
+    document.querySelector("#maincontainer").style.display="none"
+
+})
+// for signup
+document.querySelector(".mysignup").addEventListener('submit',forsignup)
+var userstack=JSON.parse(localStorage.getItem("userdatabase")) ||[]
+function forsignup(event){
+    event.preventDefault()
+
+    var signname=document.getElementById("signupcreatename").value
+    var signemail=document.getElementById("signupcreateemail").value
+    var signpassword=document.getElementById("signupcreatepassword").value
+
+    var userdata={
+        signinname:signname,
+        signinemail: signemail,
+        signinpassword: signpassword
+    }
+    userstack.push(userdata)
+
+    localStorage.setItem("userdatabase",JSON.stringify(userstack))
+    alert("Sign up Successful")
+    
+    document.querySelector("#signupmaincontainer").style.display="none"
+    // document.location.reload();
+}
+
+//for login//
+document.querySelector(".mylogin").addEventListener('submit',forlogin)
+var reguser=JSON.parse(localStorage.getItem("userdatabase"))
+
+function forlogin(event){
+    event.preventDefault()
+    
+    var loginemail=document.getElementById("loginenteremail").value
+    var loginpassword=document.getElementById("loginenterpassword").value
+
+    var flag=false;
+    for(var i=0; i<reguser.length; i++)
+    {
+        
+        if(reguser[i].signinemail==loginemail && reguser[i].signinpassword==loginpassword)
+        {
+            flag=true;
+            // FOR DISPLAY NAME AFTER LOGINED
+            var nameofmyuser=reguser[i].signinname
+        }
+    }
+    if(flag==true)
+        {
+            alert("login Successful")
+        
+            document.querySelector("#signupmaincontainer").style.display="none"
+            document.querySelector("#maincontainer").style.display="none"
+            document.querySelector("#clickonsignin").textContent="Welcome"+" "+nameofmyuser;
+            document.querySelector("#clickonsignin").style.marginTop="20px"
+            document.querySelector("#clickonsignin").style.fontSize="15px"
+            localStorage.setItem("nameofmyuser",JSON.stringify("welcome"+" "+nameofmyuser))
+            
+           
+        }
+        else{
+            alert("Wrong Email or Password")
+
+        }
+        
+}
+
+ 
+</script>
