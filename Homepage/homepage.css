@@ -1,0 +1,278 @@
+/*nav bar*/
+#logo{
+    width: 10%;
+}
+#navbar {
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    padding: 8px;
+    box-shadow: 0px 0.5px 0px 0px rgb(202, 196, 196);
+    height: 4rem;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0px; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+#bold{
+    font-weight: 700;
+}
+#innernav {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.wb{
+    border: 1px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px;
+    margin: auto;
+    margin: 2px 20px;
+    color: black;
+}
+.loginlogo{
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+}
+.wb:hover{
+    color:#1AC9B5;
+}
+.subscription-btn{
+    border: 1px solid #A8B5C0;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 6px;
+    margin: 5px 20px;
+    height: 40%;
+    vertical-align: middle;
+    color: black;
+}
+
+
+.subscription-btn:hover{
+    color: #1AC9B5;
+}
+#rightnav {
+    display: flex;
+    justify-content:space-evenly;
+
+}
+/*Homepage Body */
+#mainpage{
+    width: 100%;
+    border: none;
+    background-color: #F1F4F8;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+/*appbanner*/
+#appbanner{
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+}
+#appbanner > img {
+    width: 100%;
+}
+/*Our Journey*/
+#ourjourney >h2,  #ourinvestors>h2{
+color: #A8B5C0;
+}
+#ourjourney {
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    
+}
+#innerwhite {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;    
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+#innerbox img{
+    width: 50%;
+}
+
+#innerbox p{
+    color: #8c9296;
+}
+#innerbox {
+    margin: auto;
+    padding: 30px 0px;
+}
+/*our investors*/
+#ourinvestors {
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+
+#invinnerwhite{
+    display: flex;
+    background-color: white;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+#invineerbox{
+    display: flex;
+    border: 1px solids salmon;
+    justify-content: center;
+    margin: auto;
+}
+#invinnerbox img{
+    width: 200px;
+}
+/*Servicable Cities*/
+#servicablecities{
+    background-color: #2A2B36;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+#servicablecities h1{
+    margin: 35px;
+    padding-top: 35px;
+    color: white;
+}
+#servicableinnerbox {
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px 20px 20px;
+}
+#citieslist > div{
+padding-bottom: 3px;
+}
+#citieslist a{
+    text-decoration: none;
+    margin: auto;
+    color:#74747B;
+}
+#citieslist a:hover {
+    text-decoration: none;
+    margin: auto;
+    color: white;
+}
+
+/*footer*/
+#footer {
+    width:80%;
+    margin: auto;
+    margin-top: 50px;
+}
+#footer h2{
+    color: #8c9296;
+}
+#footer p, li{
+    color: #44484e;
+}
+#footer > div{
+    margin-bottom: 50px;
+}
+
+/*footer white*/
+#footerwhite{
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    gap: 2%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    border: 1px solid salmon;
+}
+#footerwhite a{
+    text-decoration: none;
+    color: #44484e;
+}
+#footerwhite div{
+    margin:50px;
+    border: 1px solid cyan;
+}
+#footerwhite > img{
+    width: 30%;
+}
+
+#footerwhite li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.appbtn{
+    width: 100%;
+    display: flex;
+    border: 1px solid #A8B5C0;
+    border-radius: 4px;
+    text-decoration: none;
+    vertical-align: middle;
+    color: black;
+    margin-bottom: 10px;
+}
+.logoelem{
+    height: 23px;
+    width: 23px;
+    object-fit: contain;
+    object-position: center;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 6px;
+}
+
+/*homefaq*/
+#homefaq{
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+#homefaq h2{
+    color: #8c9296;
+}
+#homefaq a{
+    color: #1CB8C9;
+    text-decoration: underline;
+}
+#homefaqtop{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+#homefaqtop > a {
+    text-decoration: none;
+    margin: auto 0px;
+}
+#faqinf div{
+    border-bottom: 1 px solid grey;
+}
+#faqinf{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+/*whyrevslider*/
+#whyrevslider{
+    width: 80%;
+    margin: auto;
+}
+#whyrevheader{
+    display: flex;
+    justify-content: space-between;
+}
+#controls{
+    margin: auto 0px;
+}
