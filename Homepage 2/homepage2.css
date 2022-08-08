@@ -1,0 +1,592 @@
+/* Hyundai page 1st row */
+#home_page_1st_row {
+    margin: 0;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    display: flex;
+
+
+
+}
+
+/* banner-content */
+#content {
+
+    display: flex;
+    width: 82%;
+    justify-content: center;
+    gap:25px;
+    /* font-size: 20px; */
+    /* margin: auto; */
+    padding-top: 110px;
+    margin-left: 80px;
+
+
+}
+
+#left {
+    width: 55%;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    /* box-sizing: border-box; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-right: 50%;
+}
+
+/* search bar*/
+form{
+    width:95%;
+    box-sizing: border-box;
+   
+
+}
+#subs-logo{
+    width:60%;
+    margin:40px 145px 5px;
+    /* vertical-align: center; */
+}
+#poweredBy{
+    text-align: center;
+
+}
+#buttondiv{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    justify-content: space-between;
+}
+#buttondiv div{
+    border: 1px solid grey;
+    padding: 15px;  
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: None;
+}
+#Rentalsbuton{
+    text-decoration: none;
+    color: #2A2B36;
+}
+#SubscriptionButton{
+    background-color: #49A6BA;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px ;
+}
+.subscription-name{
+   
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5a5254;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.choose-city,select{
+    /* box-sizing: border-box; */
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+   
+    
+    /* border:none; */
+}
+label{
+    margin-left:36px;
+}
+
+.date-time-duration{
+   display: flex;
+   margin:auto;
+   width:90%;
+   
+  
+}
+#date{
+    width:63%;
+}
+#duration{
+    width:100%;
+}
+
+#search-btn{
+    margin: auto;
+    text-align: center;
+
+
+}
+.form-icon{
+    height:30px;
+    width:30px;
+     
+}
+input[type="submit"]{
+   
+
+    background-image: linear-gradient(to left, rgb(28, 171, 162), rgb(28, 127, 171));
+    border-radius: 4px;
+    width: 230px;
+    border: none;
+    max-height: 46px;
+    min-height: 46px;
+    margin-top: 25px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 20px;
+    color:white;
+}
+select{
+    box-sizing: border-box;
+    padding:18px;
+    font-size:25px;
+    font-family: Poppins;
+    border:none;
+    border-bottom: 2px solid #b9bbc7;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+    font-style: inherit;
+    font-variant: inherit; 
+
+}
+input[type="datetime-local"]{
+    
+    box-sizing: border-box;
+    padding:15px;
+    
+    font-size:25px;
+    font-family: Poppins;
+    border:none;
+    border-bottom: 2px solid #b9bbc7 ; 
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.87);
+    cursor: inherit;
+    font-style: inherit;
+    font-variant: inherit; 
+    width:85%;
+}
+/*nav bar*/
+#logo{
+    width: 10%;
+}
+#navbar {
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    padding: 8px;
+    box-shadow: 0px 0.5px 0px 0px rgb(202, 196, 196);
+    height: 4rem;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0px; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+#bold{
+    font-weight: 700;
+}
+#innernav {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.wb{
+    border: 1px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px;
+    margin: auto;
+    margin: 2px 20px;
+    color: black;
+}
+.loginlogo{
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+}
+.wb:hover{
+    color:#1AC9B5;
+}
+.subscription-btn{
+    border: 1px solid #A8B5C0;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 6px;
+    margin: 5px 20px;
+    height: 40%;
+    vertical-align: middle;
+    color: black;
+}
+
+
+.subscription-btn:hover{
+    color: #1AC9B5;
+}
+#rightnav {
+    display: flex;
+    justify-content:space-evenly;
+
+}
+#mainpage{
+    width: 100%;
+    border: none;
+    background-color: #F1F4F8;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+/*footerbottom*/
+#footerbottom{
+    background-color: white;
+}
+#footertext{
+    width: 80%;
+    margin: auto;
+}
+/*our investors*/
+#ourinvestors {
+    width: 80%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+#invinnerwhite{
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+#invineerbox{
+    display: flex;
+    border: 1px solids salmon;
+    justify-content: center;
+    margin: auto;
+}
+#invinnerbox img{
+    width: 200px;
+}
+/*footer white*/
+#foooter{
+    width: 100%;
+    background-color: #F4F4F4;
+}
+#footerwhite{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    height: 100%;
+    gap: 2%;
+}
+#footerwhite a{
+    text-decoration: none;
+    color: #44484e;
+}
+#footerwhite div{
+    margin:50px;
+}
+#footerleft > img{
+    width: 30%;
+}
+
+#footerwhite li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+#footerwhite li:hover{
+    color: black;
+}
+.appbtn{
+    width: 100%;
+    display: flex;
+    border: 1px solid #A8B5C0;
+    border-radius: 4px;
+    text-decoration: none;
+    vertical-align: middle;
+    color: black;
+    margin-bottom: 10px;
+}
+.logoelem{
+    height: 23px;
+    width: 23px;
+    object-fit: contain;
+    object-position: center;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 6px;
+}
+/*SocialMediaHandles*/
+#socialhandles{
+    display: flex;
+    gap: 20px;
+}
+#socialhandles img{
+    width: 50px;
+    margin: auto;
+}
+
+#servicablecities{
+    background-color: #2A2B36;
+    width: 100%;
+    margin: auto;
+}
+#servicablecities h1{
+    margin: 35px;
+    padding-top: 35px;
+    color: white;
+}
+#servicableinnerbox {
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px 20px 20px;
+}
+#citieslist > div{
+padding-bottom: 3px;
+}
+#citieslist a{
+    text-decoration: none;
+    margin: auto;
+    color:#74747B;
+}
+#citieslist a:hover {
+    text-decoration: none;
+    margin: auto;
+    color: white;
+}
+/*slider*/
+#sliderhead >h2{
+    color: black;
+    font-weight: 500px;
+}
+.parent{
+    display: flex;
+    align-items: center;
+}
+#sliderhead{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+} 
+#childinner{
+    display: flex;
+    margin: auto;
+}
+#leftarrow, #rightarrow{
+    cursor: pointer;
+} 
+#controls{
+  margin: auto 0px;
+}
+#slider{
+    width: 80%;
+    margin: auto;
+    padding: 18px;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius:5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+#slidertop{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid blue;
+}
+#slides{
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+}
+#slides ::-webkit-scrollbar{
+    visibility: hidden;
+}
+#cs1{
+    width: 100%;
+}
+#cs2{
+    width: 100%;
+}
+#slides > div{
+    min-width: 28%;
+    border: 1px solid black;
+    margin: 30px;
+}
+#controls{
+    margin: auto 0px;
+}
+#leftimg {
+    margin: 10px;
+}
+.child{
+    width: 32%;
+    margin: auto;
+    display: none;
+}
+
+/*whatisrev*/
+#whatisrev{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 18px;
+    border-radius: 10px;
+}
+#whatisrev p{
+    font-size:24px;
+    color: #A8B5C0  ;
+}
+#whatisrevbutton{
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 15px;
+    background-color: white;
+    color: #1AC9B5;
+}
+#howitworks img{
+    width: 100%;
+}
+/*featured on*/
+#featuredon{
+    width: 80%;
+    margin: auto;
+}
+#featuredrow{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+#featuredlogo{
+    width: 100%;
+    margin: auto;
+}
+#featuredbottom {
+    font-size: 16px;
+    padding: 20px;
+}
+#featuredinner{
+    width: 30%;
+    background-color: white;
+    height: 250px;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;  
+}
+#featuredupper{
+    width: 100%;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;  
+}
+
+/*investor row*/
+/* Our journey row */
+#our-journey {
+    width: 100%;
+    background-image: linear-gradient(white, #f3f3f3);
+}
+
+#our-journey-content {
+    width: 82%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+#our-journey-icon {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.customer-review {
+
+    margin-top: 28px;
+    margin-bottom: 45px;
+
+}
+
+.customer-review>p {
+    margin-top: -15px;
+    color: #4b4d5d;
+    font-weight: 500;
+}
+    /* Hyundai FAQ row */
+    #faq_parent {
+        width: 100%;
+        background-image: linear-gradient(white, #f3f3f3);
+    }
+    
+    #faq_container {
+        width: 82%;
+        margin: auto;
+        padding-top: 50px;
+    }
+    
+    .faq-summary {
+        list-style-type: none;
+    }
+    
+    #viewAll {
+        margin-top: 80px;
+        margin-bottom: 55px;
+        background-color: white;
+        border: 1px solid rgb(189, 189, 189);
+        padding: 15px 60px;
+    }
+    
+    #viewAll>a {
+        text-decoration: none;
+        color: #089d8c;
+        font-size: 16px;
+        font-weight: 700;
+    
+    }
+    /* <!--Subscriptionvs buying--> */
+    #subscribevsbuying{
+        width: 100%;
+        background-image: linear-gradient(white, #f3f3f3);
+        height: 100%;
+    }
+    #comparetable{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+    #comparetable div{
+        border-bottom: 1px solid grey;
+        height: 30px;
+    }
+    #topcomparevsbuy{
+        margin: auto;
+    }
+    #prop{
+        width: 50%;
+        font-size: 20px;
+    }
+    #prop div{
+        margin: 20px 0 20px 0;
+        align-items: center;
+    }
+
+    #subscribecol{
+        width: 25%;
+    }
+    #buycol{
+        width: 25%;
+    }

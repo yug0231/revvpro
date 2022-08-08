@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <linearGradient id="linear-gradient" x2="1" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#1c7fab"/>
+            <stop offset="1" stop-color="#1caba2"/>
+        </linearGradient>
+        <style>
+            .cls-2{fill:none;stroke:#000;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="Group_3874" data-name="Group 3874" transform="translate(-40.081 -.012)">
+        <path id="Rectangle_3874" fill="#fff" d="M0 0H30V30H0z" data-name="Rectangle 3874" transform="translate(40.081 .012)"/>
+        <ellipse id="Ellipse_212" cx="10.935" cy="4.199" class="cls-2" data-name="Ellipse 212" rx="10.935" ry="4.199" transform="translate(44.147 3.297)"/>
+        <path id="Path_3725" d="M66.016 7.495v2.327c0 2.319-4.9 4.2-10.935 4.2s-10.934-1.88-10.934-4.2V7.495" class="cls-2" data-name="Path 3725"/>
+        <path id="Path_3726" d="M44.147 20.838c0 2.319 4.9 4.2 10.934 4.2s10.935-1.88 10.935-4.2v2.928c0 2.318-4.9 4.2-10.935 4.2s-10.934-1.88-10.934-4.2v-2.928z" class="cls-2" data-name="Path 3726"/>
+        <ellipse id="Ellipse_213" cx="4.874" cy="1.872" fill="url(#linear-gradient)" data-name="Ellipse 213" rx="4.874" ry="1.872" transform="translate(50.207 5.624)"/>
+        <path id="Line_177" d="M0 0L0 12.451" class="cls-2" data-name="Line 177" transform="translate(66.016 9.985)"/>
+        <path id="Line_178" d="M0 0L0 12.451" class="cls-2" data-name="Line 178" transform="translate(44.147 9.985)"/>
+        <path id="Line_179" d="M0 0L0 11.035" class="cls-2" data-name="Line 179" transform="translate(46.779 12.44)"/>
+        <path id="Line_180" d="M0 0L0 11.035" class="cls-2" data-name="Line 180" transform="translate(63.459 12.44)"/>
+        <path id="Line_181" d="M0 0L0 11.035" class="cls-2" data-name="Line 181" transform="translate(60.404 13.367)"/>
+        <path id="Line_182" d="M0 0L0 11.035" class="cls-2" data-name="Line 182" transform="translate(49.773 13.367)"/>
+        <path id="Line_183" d="M0 0L0 11.035" class="cls-2" data-name="Line 183" transform="translate(53.011 13.935)"/>
+        <path id="Line_184" d="M0 0L0 11.035" class="cls-2" data-name="Line 184" transform="translate(56.921 13.935)"/>
+    </g>
+</svg>
