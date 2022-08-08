@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahindra Cars Subscription in India | Rent New Mahindra Cars - Revv revv.co.in</title>
-    <link rel="stylesheet" href="../Hyundai_subscription/navbar.css">
-</head>
 
+    <link rel="stylesheet" href="../Hyundai_subscription/navbar.css">
+    <link rel="icon" type="image/x-icon" href="../Hyundai_subscription/img/revlogo.png">
+    
+    
+</head>
 <body>
     <!-- Mahindra home page -->
     <div id="hyundai_page_continer">
@@ -17,9 +20,9 @@
             <div id="innernav">
                 <div id="left-navbar">
                     <img class="logo" src="../Hyundai_subscription/img/revlogo.png" alt="revvlogo">
-                    
+
                     <img class="logo" src="../Hyundai_subscription/img/mahindra-logo-sub@2x.png" alt="mahindra-logo">
-                    
+
                 </div>
                 <div id="rightnav">
                     <a href="" , class="subscription-btn, wb"><b>How it works</b></a>
@@ -34,20 +37,81 @@
         <!-- Hyundai page 1st row -->
         <div id="home_page_1st_row_mahindra">
             <div id="content">
+                <!-- banner left side -->
+                <div style="padding-bottom: 40px;" id="left">
 
-                <div style="width:52%;" id="left">Hello</div>
+                    <form action="">
+                        <img id="subs-logo" src="../pngImage/logo_mahindra_sub_web@3x.png" alt="page-logo">
+                        <div id="poweredBy">Powered by Revv</div>
+
+                        <!-- Subscription in city -->
+
+                        <h1 class="subscription-name">Hyundai Cars Subscription <span id="subscription-city"></span>
+                        </h1>
+                        <div class="choose-city">
+                            <label for="CITY">CITY</label><br>
+                            <img class="form-icon" src="../pngImage/locationIcon.png" alt="location-logo">
+                                <select  name="" id="select-city">
+                                    <option value="">Select city</option>
+                                    <option value="Hyderabad">Hyderabad</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Delhi-NCR">Delhi-NCR</option>
+                                    <option value="Bangalore">Bangalore</option>
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Pune">Pune</option>
+                                    <option value="">Other Cities</option>
+                                    <option value="Kolkata">Kolkata</option>
+                                    <option value="Ahmedabad">Ahmedabad</option>
+                                    <option value="Bhubaneswar">Bhubaneswar</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Coimbatore">Coimbatore</option>
+                                    <option value="Jaipur">Jaipur</option>
+                                    <option value="Kochi">Kochi</option>
+                                    <option value="Mangalore">Mangalore</option>
+                                    <option value="Mysore">Mysore</option>
+                                    <option value="Nagpur">Nagpur</option>
+                                    <option value="Surat">Surat</option>
+                                    <option value="Tirupati">Tirupati</option>
+                                    <option value="Trivandrum">Trivandrum</option>
+                                    <option value="Vadodara">Vadodara</option>
+                                    <option value="Vijayawada">Vijayawada</option>
+                                    <option value="Vizag">Vizag</option>
+                                </select>
+
+
+                        </div>
+                        <div class="date-time-duration">
+                            <div id="date" style="width:55%">
+                                <label for="START DATE">START DATE</label><br>
+                                <img class="form-icon" src="../pngImage/calenderIcon.png" alt="calendar-icon">
+                                <input class="searchDate" type="datetime-local" value="">
+                            </div>
+
+                            <div id="duration">
+                                <label for="DURATION">DURATION</label>
+                                <h2> 1, 2, 3 or 6 Months </h2>
+                                <hr>
+                            </div>
+                        </div>
+                        <div id="search-btn">
+                            <input type="submit" value="Search"/>
+                        </div>
+
+                    </form>
+
+                </div>
 
                 <a href="" style="text-decoration: none;">
                     <div id="right">
                         <div>
 
-                             <p class="para1">Looking for Mahindra Subscription</p>
-                            
+                            <p class="para1">Looking for Mahindra Subscription</p>
+
                             <p class="para2">By the Years <span id="explore">Explore</span><span id="icon">
-                                <img src="../svgImage/open-xplore.svg" alt="icon">
-                            </span></p>
-                                
-                            
+                                    <img src="../svgImage/open-xplore.svg" alt="icon">
+                                </span></p>
+
+
                         </div>
                     </div>
                 </a>
@@ -426,3 +490,6 @@
 </body>
 
 </html>
+<!-- javs script file -->
+
+<script src="../subscription_mahindra.js"></script>

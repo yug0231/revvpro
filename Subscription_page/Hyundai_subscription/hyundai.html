@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyundai Cars Subscription in India | Subscribe Hyundai Cars - Revv revv.co.in</title>
     <link rel="stylesheet" href="navbar.css">
+    
+    <link rel="icon" type="image/x-icon" href="../Hyundai_subscription/img/revlogo.png">
+    
 </head>
-
 <body>
     <!-- Hyundai home page -->
     <div id="hyundai_page_continer">
@@ -38,8 +40,66 @@
             id="home_page_1st_row">
             <div id="content">
 
-                <div id="left">Hello</div>
+                <!-- search bar -->
+                <div id="left" style="padding-bottom: 40px;">
+                    <form action="">
+                    <img id="subs-logo" src="../pngImage/logo_hyundai_sub_web@3x.png" alt="page-logo">
+                    <div id="poweredBy">Powered by Revv</div>
+                    <h1  class="subscription-name">Hyundai Cars Subscription <span id="subscription-city"></span></h1>
+                    <div class="choose-city">
+                        <label for="CITY">CITY</label><br>
+                        <img  class="form-icon" src="../pngImage/locationIcon.png" alt="location-logo">
+                        <select name="" id="select-city">
+                            <option value="">Select city</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Delhi-NCR">Delhi-NCR</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="">Other Cities</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Bhubaneswar">Bhubaneswar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Kochi">Kochi</option>
+                            <option value="Mangalore">Mangalore</option>
+                            <option value="Mysore">Mysore</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Tirupati">Tirupati</option>
+                            <option value="Trivandrum">Trivandrum</option>
+                            <option value="Vadodara">Vadodara</option>
+                            <option value="Vijayawada">Vijayawada</option>
+                            <option value="Vizag">Vizag</option>
+                        </select>
+                    
+                    </div>
+                    <div class="date-time-duration">
+                        <div id="date">
+                            <label for="START DATE">START DATE</label><br>
+                            <img class="form-icon" src="../pngImage/calenderIcon.png" alt="calendar-icon">
+                            <input class="searchDate" type="datetime-local" value="">
+                        </div>
 
+                        <div id="duration">
+                            <label for="DURATION">DURATION</label><h2> 1, 2, 3 or 6 Months </h2><hr>
+                        </div>
+                    </div>
+                    <div id="search-btn">
+
+                       
+                        <!-- Added Subscription_car page -->
+                        <input type="submit" value="Search" >
+                        <!-- <a href="../subscription_carPage/hundai_car/hyundai_unboxed.html" target="_parent"> </a>  -->
+                    </div>
+
+                </form>
+                </div>
+
+              <!-- right side of banner page -->
                 <a href="" style="text-decoration: none;">
                     <div id="right">
                         <div>
@@ -435,3 +495,5 @@
 </body>
 
 </html>
+<!-- java script file -->
+<script src="../subscription_hyundai.js"></script>

@@ -26,6 +26,7 @@ body {
     top: 0px;
     /* Position the navbar at the top of the page */
     width: 100%;
+    z-index: 1;
     /* Full width */
 }
 
@@ -108,11 +109,13 @@ body {
 
 /* Hyundai page 1st row */
 #home_page_1st_row {
-    height: 700px;
+    margin: 0;
+    height: 750px;
     background-repeat: no-repeat;
     background-size: 140% 100%;
     width: 100%;
     display: flex;
+
 
 
 }
@@ -122,30 +125,154 @@ body {
 
     display: flex;
     width: 82%;
-    justify-content: space-between;
+    justify-content: center;
+    gap:25px;
     /* font-size: 20px; */
-    margin: auto;
+    /* margin: auto; */
     padding-top: 110px;
+    margin-left: 80px;
 
 
 }
 
 #left {
-    width: 60%;
+    width: 55%;
     height: 480px;
     background-color: white;
     border-radius: 5px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+/* search bar*/
+form{
+    width:95%;
+    box-sizing: border-box;
+   
+
+}
+#subs-logo{
+    width:60%;
+    margin:40px 145px 5px;
+    /* vertical-align: center; */
+}
+#poweredBy{
+    text-align: center;
+
+}
+.subscription-name{
+   
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5a5254;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.choose-city,select{
+    /* box-sizing: border-box; */
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+   
+    
+    /* border:none; */
+}
+label{
+    margin-left:36px;
+}
+
+.date-time-duration{
+   display: flex;
+   margin:auto;
+   width:90%;
+   
+  
+}
+#date{
+    width:63%;
+}
+#duration{
+    width:100%;
+}
+
+#search-btn{
+    margin: auto;
+    text-align: center;
+
+
+}
+.form-icon{
+    height:30px;
+    width:30px;
+     
+}
+input[type="submit"]{
+   
+
+    background-image: linear-gradient(to left, rgb(28, 171, 162), rgb(28, 127, 171));
+    border-radius: 4px;
+    width: 230px;
+    border: none;
+    max-height: 46px;
+    min-height: 46px;
+    margin-top: 25px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 20px;
+    color:white;
+}
+select{
+    box-sizing: border-box;
+    padding:18px;
+    font-size:25px;
+    font-family: Poppins;
+    border:none;
+    border-bottom: 2px solid #b9bbc7;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+    font-style: inherit;
+    font-variant: inherit; 
+
+}
+input[type="datetime-local"]{
+    
+    box-sizing: border-box;
+    padding:15px;
+    
+    font-size:25px;
+    font-family: Poppins;
+    border:none;
+    border-bottom: 2px solid #b9bbc7 ; 
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.87);
+    cursor: inherit;
+    font-style: inherit;
+    font-variant: inherit; 
+    width:85%;
+}
+ 
+/* right side of banner */
 #right {
     display: flex;
     cursor: pointer;
-    width: 400px;
-    height: 40px;
+    /* width: 400px; */
+    width:100%;
+    height: 32px;
     padding: 30px 25px;
+    /* padding-left: -2px; */
     align-items: baseline;
+    
     border-radius: 5px;
     background-image: linear-gradient(to right, white, #e8e8e8);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -186,7 +313,7 @@ body {
     background-repeat: no-repeat;
     background-size: 140% 100%;
     width: 100%;
-
+    
     background: linear-gradient(transparent, transparent), url('../Hyundai_subscription/img/mahindra-home-background.jpg');
 }
 
@@ -201,6 +328,7 @@ body {
     position: absolute;
     background-size: 90%;
     background-repeat: no-repeat;
+    z-index: initial;
 
 }
 

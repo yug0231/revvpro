@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Mahindra Car Subscription</title>
+  <link rel="icon" type="image/x-icon" href="../mahindra_car/icons/revlogo.png">
+  <style>
+    #box {
+
+      display: flex;
+      flex-direction: column;
+      /* border: 1px solid black;*/
+      width: 50%;
+      margin-left: 25%;
+      gap: 20px;
+      margin-top: 10%;
+
+    }
+
+    #up_box {
+      display: flex;
+      justify-content: space-around;
+      /*  border: 1px solid rgb(241, 55, 55);*/
+
+    }
+
+    #down_box {
+      display: flex;
+      /*  border: 1px solid rgba(0, 16, 105, 0.493);*/
+      justify-content: space-around;
+
+    }
+
+    #down_box>div {
+      /* border: 1px solid   green  ;*/
+      width: 40%;
+      padding: 10px 20px;
+      gap: 20px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    img {
+      width: 30%;
+    }
+
+    #down_box>div:hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    h4 {
+      color: #aaa;
+    }
+
+    #down_box>div>h3 {
+      color: teal;
+      border-left: 2px solid teal;
+      width: 180px;
+
+
+
+    }
+
+    #box+h3 {
+      color: #aaa;
+    }
+
+    /*css of navbbar*/
+    /*nav bar*/
+    #logo {
+      width: 20%;
+    }
+
+    #navbar {
+      box-sizing: border-box;
+      background-color: white;
+      border: none;
+      padding: 8px;
+      box-shadow: 0px 0.5px 0px 0px rgb(202, 196, 196);
+      height: 4rem;
+      position: fixed;
+      /* Set the navbar to fixed position */
+      top: 0px;
+      /* Position the navbar at the top of the page */
+      width: 100%;
+      /* Full width */
+      display: flex;
+      justify-content: space-around;
+    }
+
+    #bold {
+      font-weight: 700;
+    }
+
+    #innernav {
+      width: 75%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .wb {
+      border: 1px solid white;
+      border-radius: 4px;
+      text-decoration: none;
+      padding: 8px;
+      margin: auto;
+      margin: 2px 20px;
+      color: black;
+    }
+
+    .loginlogo {
+      vertical-align: middle;
+      margin: 0px;
+      padding: 0px;
+      width: auto;
+    }
+
+    .wb:hover {
+      color: #1AC9B5;
+    }
+
+    .subscription-btn {
+
+      border-radius: 4px;
+      text-decoration: none;
+      padding: 6px;
+      margin: 5px 10px;
+      height: 40%;
+      vertical-align: middle;
+      color: black;
+    }
+
+
+    .subscription-btn:hover {
+      color: #1AC9B5;
+    }
+
+    #rightnav {
+      display: flex;
+      justify-content: space-evenly;
+
+
+    }
+
+    .btn_call {
+      color: #1AC9B5;
+      border-radius: 5px;
+      border: 1px solid #1AC9B5;
+      width: 100px;
+      height: 40px;
+    }
+
+    #innernav>div>img>a {
+      display: flex;
+      width: 40%;
+      border-left: 1px solid #aaa;
+    }
+
+    /*end of css navbaar    */
+    /*links*/
+    #links {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 1%;
+      box-shadow: 2px 2px 5px 5px rgb(235, 235, 235);
+      position: fixed;
+      /* Set the navbar to fixed position */
+      top: 50px;
+      /* Position the navbar at the top of the page */
+      width: 70%;
+      /* Full width */
+      background-color: white;
+      float: right;
+      margin-left: 35%;
+
+    }
+
+    #links>div {
+      display: flex;
+      list-style: none;
+    }
+
+    #links a {
+      text-decoration: none;
+      color: rgb(104, 100, 100);
+      font-size: 30px;
+    }
+
+    #link a:focus {
+      color: teal;
+    }
+
+    #sortsalary {
+      border: none;
+
+    }
+
+    /*end of links*/
+    /*for bottom of the page*/
+   
+
+    /*left div*/
+    #left_div {
+      width: 25%;
+
+      /* border: 2px solid black;*/
+      display: flex;
+      flex-direction: column;
+      float: left;
+      padding: auto;
+      margin-left: 10%;
+      margin-top: 10%;
+      margin-right: -20%;
+
+    }
+
+    #up {
+      margin-top: 40px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      /*border: 1px solid red;*/
+      font-size: 12px;
+      margin-left: 15px;
+      color: rgb(141, 138, 138);
+      flex-wrap: wrap;
+    }
+
+    #container {
+      /*border: 2px solid green;*/
+      display: flex;
+      gap: 1%;
+      float: left;
+    }
+
+
+    #filter {
+      color: rgb(122, 120, 120);
+      font-weight: bold;
+
+    }
+
+    #select {
+      font-weight: bold;
+      font-size: 18px;
+
+    }
+
+    #left_div>select {
+      border: none;
+      height: 20px;
+      border-bottom: 1px solid #aaa;
+      margin-top: 10px;
+    }
+
+    #price_range>select {
+      border: none;
+      border-bottom: 1px solid #aaa;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+    }
+
+    #checkboxes>div {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .input-icons {
+      width: 100%;
+      margin-bottom: 10px;
+      color: teal;
+
+    }
+
+    #popular_btn {
+      color: white;
+      align-items: center;
+      font-size: 20px;
+      margin-left: 35px;
+      margin-top: -10%;
+      background-color: #1AC9B5;
+      border: none;
+      width: 40%;
+      height: 30px;
+    }
+
+    /*NAVBAAR*/
+    #navbar {
+      box-sizing: border-box;
+      background-color: white;
+      border: none;
+      padding: 8px;
+      box-shadow: 0px 0.5px 0px 0px rgb(202, 196, 196);
+      height: 4rem;
+      position: fixed;
+      /* Set the navbar to fixed position */
+      top: 0px;
+      /* Position the navbar at the top of the page */
+      width: 100%;
+      z-index: 1;
+      /* Full width */
+    }
+
+    #innernav {
+
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+    /*footer white*/
+    #foooter {
+      width: 100%;
+      background-color: #F4F4F4;
+    }
+
+    #footerwhite {
+      display: grid;
+      width: 80%;
+      grid-template-columns: repeat(3, 1fr);
+      margin: auto;
+      height: 100%;
+      gap: 2%;
+    }
+
+    #footerwhite a {
+      text-decoration: none;
+      color: #44484e;
+    }
+
+    #footerwhite div {
+      margin: 50px;
+      /* border: 1px solid cyan; */
+    }
+
+    #footerleft>img {
+      width: 100%;
+    }
+
+    #footerwhite li {
+      list-style: none;
+      padding-bottom: 20px;
+    }
+
+    #about_us li a:hover {
+      color: black;
+      font-weight: 700;
+    }
+
+    .appbtn {
+      width: 100%;
+      display: flex;
+      border: 1px solid #A8B5C0;
+      border-radius: 4px;
+      text-decoration: none;
+      vertical-align: middle;
+      color: black;
+      margin-bottom: 10px;
+      background-color: white;
+    }
+
+    .appbtn:hover {
+      background-color: rgb(20, 228, 228);
+    }
+
+    .logoelem {
+      height: 23px;
+      width: 23px;
+      object-fit: contain;
+      object-position: center;
+      vertical-align: middle;
+      margin: 10px;
+      padding: 6px;
+    }
+
+    /*SocialMediaHandles*/
+    #socialhandles {
+      display: flex;
+      gap: 20px;
+    }
+
+    #socialhandles img {
+      width: 50px;
+      margin: auto;
+    }
+
+    #socialhandles img:hover {
+      background-color: rgb(20, 228, 228);
+    }
+
+
+    /* left navbar */
+    #left-navbar {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+      justify-content: space-evenly;
+    }
+
+    .logo {
+      width: 37%;
+      height: 90%;
+    }
+
+    .logo:nth-child(2) {
+      height: 38%;
+      border-left: 1px solid rgb(105, 105, 105);
+      margin-left: 8px;
+      width: 52%;
+      padding: 8px 12px;
+    }
+
+
+    /* right nav */
+    #rightnav {
+      display: flex;
+      justify-content: space-evenly;
+
+
+    }
+
+    .wb {
+      border: 1px solid white;
+      border-radius: 4px;
+      text-decoration: none;
+      padding: 8px;
+      margin: auto;
+      margin: 2px 20px;
+      color: black;
+      font-family: Poppins;
+    }
+
+    .loginlogo {
+      vertical-align: middle;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .wb:hover {
+      color: #1AC9B5;
+    }
+
+    .subscription-btn {
+      border: 1px solid #A8B5C0;
+      border-radius: 4px;
+      text-decoration: none;
+      padding: 6px;
+      margin: 5px 20px;
+      height: 40%;
+      vertical-align: middle;
+      color: black;
+    }
+
+
+    .subscription-btn:hover {
+      color: #1AC9B5;
+    }
+  </style>
+
+<body>
+  <!--links-->
+  <div id="links">
+    <!--  <div style="display: flex;flex-direction:column ;"><a href="mahindraUsingJs.html"> <h2 style="font-size:20px;color: black;">Brand new car</h2></a>
+           
+            <p style="margin-top: -15px;"> specially for you</p>
+        </div>-->
+    <div><a href="brandnew_mahendra.html">Brand new car</a></div>
+    <div><a href="unboxed_mahendra.html">Unboxed Car</a></div>
+
+
+
+    <select style="border: none;" id="sortPrice" onchange=handlePriceFilterSort()>
+      <option value="">Sort By:</option>
+      <option value="hlt">High to low</option>
+      <option value="lth">low to high</option>
+    </select>
+
+  </div>
+
+  <!--navbaar of mahindra subscription-->
+  <div id="navbar">
+    <div id="innernav">
+      <div id="left-navbar">
+        <img class="logo" src="../mahindra_car/icons/revlogo.png" alt="revvlogo">
+
+        <img class="logo" src="../mahindra_car/icons/mahindra-logo-sub@2x.png" alt="mahindra-logo">
+
+      </div>
+      <div id="rightnav">
+        <a href="" , class="subscription-btn, wb"><b>How it works</b></a>
+        <a href="" , class="subscription-btn, wb"><b>FAQs</b></a>
+        <a href="" , class="subscription-btn, wb">
+          <img class="loginlogo" src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" />
+          <b>Login or Signup</b></a>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <div id="left_div">
+      <div id="up">
+        <p><a href=""></a>Home > </p>
+        <p><a href="mahindraUsingJs.html"></a>Mahindra Subscription ></p>
+        <p><a href=""></a>unboxed cars</p>
+      </div>
+      <div id="filter">
+        <h3><b>Filter By</b></h3>
+
+        <h3>City</h3>
+      </div>
+      <select id="select">
+        <option><b>Mumbai</b></option>
+        <option>Delhi</option>
+        <option>Kolkata</option>
+        <option>Chennai</option>
+        <option>Pune</option>
+        <option>Kerela</option>
+      </select>
+      <P style="font-size: 20px;color: rgb(126, 123, 123);font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Search</P>
+
+      <div class="input_icons">
+        <i class="fa fa-search"></i>
+        <input style="height: 30px; " type="text" placeholder="Search by Car Model" />
+      </div>
+      <div id="price_range">
+        <P style="font-size: 20px;margin-top: 25px;margin-bottom: 25px;">Price Range</P>
+        <div>
+          <select
+            style="height: 30px;width: 40%;border: none; border-bottom: 1px solid #aaa;margin-right: 10px ;font-weight: bold;font-size: 18px;">
+
+            <label for="">min</label>
+            <option value=" "><b>₹ 20000</b> </option>
+            <option value=" ">₹ 25000</option>
+            <option value=" ">₹ 30000</option>
+
+          </select>
+          <select
+            style="height: 30px;width: 40%;border: none; border-bottom: 1px solid #aaa;font-weight: bold;font-size: 18px; ">
+
+            <p>min</p>
+            <option value=" ">₹ 35000</option>
+            <option value=" ">₹ 30000</option>
+            <option value=" ">₹ 25000</option>
+
+          </select>
+        </div>
+        <div id="checkboxes">
+          <div>
+            <h4 style="font-size: 20px;color: rgb(107, 102, 102);">Segment</h4>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">Hackback(0)</label>
+            </div>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">Sadan(0)</label>
+            </div>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">SUV/MUV (5)</label>
+            </div>
+          </div>
+          <div>
+            <h4 style="font-size: 20px;color: rgb(107, 102, 102);">Fuel</h4>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">Diesel(4)</label>
+            </div>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">Petrol(1)</label>
+            </div>
+
+          </div>
+          <div>
+            <h4 style="font-size: 20px;color: rgb(107, 102, 102);">transmission</h4>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">Automatic</label>
+            </div>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">Mannual</label>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="box">
+      <h3 style="color: #aaa;font-size:18px;">13 Brand new Mahindra cars for subscription in Mumbai</h3>
+      <div id="up_box">
+        <img src="https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg" />
+        <div>
+
+          <h2>Mahindra XUV500</h2>
+          <p>Brand New / 2 Variants</p>
+        </div>
+      </div>
+      <div id="down_box">
+
+        <div>
+          <button id="popular_btn">popular</button>
+          <h4>Mahindra XUV500</h4>
+          <h3>w5</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹33,500/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+        <div>
+          <button id="popular_btn">popular</button>
+          <h4>Mahindra XUV500</h4>
+          <h3>w5</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹33,500/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+      </div>
+      <div id="up_box">
+        <img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_Alturas.jpg" />
+        <div>
+          <h2>Mahindra Alturas</h2>
+          <p>Brand New / 2 Variants</p>
+        </div>
+      </div>
+      <div id="down_box">
+        <div>
+          <button id="popular_btn">popular</button>
+          <h4>Mahindra XUV500</h4>
+          <h3>G4_WD</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹33,500/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+        <div>
+          <button id="popular_btn">popular</button>
+          <h4>Mahindra XUV500</h4>
+          <h3>g4_4WD</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹33,500/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+      </div>
+      <div id="up_box">
+        <img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_XUV_300.jpg" />
+        <div>
+          <h2>Mahindra XUV300</h2>
+          <p>Brand New / 2 Variants</p>
+        </div>
+      </div>
+      <div id="down_box">
+        <div>
+          <h4>Mahindra XUV500</h4>
+          <h3>w5</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹34,500/month</h2>
+          <h4>₹38,500</h4>
+        </div>
+        <div>
+          <h4>Mahindra XUV500</h4>
+          <h3>w5</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹30,500/month</h2>
+          <h4>₹31,500</h4>
+        </div>
+      </div>
+      <div id="up_box">
+        <img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/Hatchback_new/Mahindra_KUV100.jpg" />
+        <div>
+          <h2>Mahindra KUV100</h2>
+          <p>Brand New / 2 Variants</p>
+        </div>
+      </div>
+      <div id="down_box">
+        <div>
+          <h4>Mahindra XUV500</h4>
+          <h3>k6+6str NXT</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹30,599/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+        <div>
+          <h4>Mahindra XUV500</h4>
+          <h3>K4+6 Str NXT</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹26,000/month</h2>
+          <h4>₹27,500</h4>
+        </div>
+      </div>
+      <div id="up_box">
+        <img src="https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_Scorpio.jpg" />
+        <div>
+          <h2>Mahindra Scorpio</h2>
+          <p>Brand New / 2 Variants</p>
+        </div>
+      </div>
+      <div id="down_box">
+        <div>
+          <h4>Mahindra Scorpio</h4>
+          <h3>S7</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹30,600/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+        <div>
+          <h4>Mahindra Scorpio</h4>
+          <h3>S5</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹34,599/month</h2>
+          <h4>₹38,500</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  </div>
+  <!--end of page-->
+  <!--footerwhite-->
+  <div id="foooter">
+    <div id="footerwhite">
+      <div id="footerleft">
+        <img src="../Social Media Handles/revlogo.png" alt="revvlogo">
+        <p>© 2022 Primemover Mobility Technologies Pvt Ltd. All rights reserved</p>
+      </div>
+      <div id="about_us">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Car Subscription</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Policy</a></li>
+          <li><a href="">Blogs </a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <div id="socialhandles">
+          <a href=""><img src="../Social Media Handles/facebook.png" /></a>
+          <a href=""><img src="../Social Media Handles/twitter.png" /></a>
+          <a href=""><img src="../Social Media Handles/instagram.png" /></a>
+          <a href=""><img src="../Social Media Handles/youtube.png" /></a>
+          <a href=""><img src="../Social Media Handles/linkedin.png" /></a>
+        </div>
+        <h3>Download the Revv App</h3>
+        <a href="" , class="appbtn">
+          <img class="logoelem"
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/appstore_apple.webp">
+          <p>Download App Store</p>
+        </a>
+        <a href="" , class="appbtn">
+          <img class="logoelem"
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/playstore_google.webp">
+          <p>Download Google Play</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

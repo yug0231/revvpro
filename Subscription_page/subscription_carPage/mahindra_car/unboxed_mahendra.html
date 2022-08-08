@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Mahindra Car Subscription</title>
+
+    <link rel="icon" type="image/x-icon" href="../mahindra_car/icons/revlogo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--links-->
+    <div id="links">
+        <div><a href="brandnew_mahendra.html">Brand new car</a></div>
+        <div><a href="unboxed_mahendra.html">Unboxed Car</a></div>
+
+
+        <select style="border: none;" id="sortPrice" onchange="handlePriceFilterSort()">
+            <option value="">Sort By:</option>
+            <option value="htl">High to low</option>
+            <option value="lth">low to high</option>
+        </select>
+
+    </div>
+
+    <div id="container">
+        <div id="parent"></div>
+        <!--this is main parent div -->
+        <!--left div -->
+        <div id="left_div">
+            <div id="up">
+                <p><a href=""></a>Home > </p>
+                <p><a href="mahindraUsingJs.html"></a>Mahindra Subscription > </p>
+                <p><a href=""></a>unboxed cars</p>
+            </div>
+            <div id="filter">
+                <h3><b>Filter By</b></h3>
+
+                <h3>City</h3>
+            </div>
+            <select id="select">
+                <option><b>Mumbai</b></option>
+                <option>Delhi</option>
+                <option>Kolkata</option>
+                <option>Chennai</option>
+                <option>Pune</option>
+                <option>Kerela</option>
+            </select>
+            <P
+                style="font-size: 20px;color: rgb(126, 123, 123);font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                Search</P>
+
+            <div class="input_icons">
+                <i class="fa fa-search"></i>
+                <input style="height: 30px; " type="text" placeholder="Search by Car Model" />
+            </div>
+            <div id="price_range">
+                <P style="font-size: 20px;margin-top: 25px;margin-bottom: 25px;">Price Range</P>
+                <div>
+                    <select
+                        style="height: 30px;width: 40%;border: none; border-bottom: 1px solid #aaa;margin-right: 10px ;font-weight: bold;font-size: 18px;">
+
+                        <label for="">min</label>
+                        <option value=" "><b>₹ 20000</b> </option>
+                        <option value=" ">₹ 25000</option>
+                        <option value=" ">₹ 30000</option>
+
+                    </select>
+                    <select
+                        style="height: 30px;width: 40%;border: none; border-bottom: 1px solid #aaa;font-weight: bold;font-size: 18px; ">
+
+                        <p>min</p>
+                        <option value=" ">₹ 35000</option>
+                        <option value=" ">₹ 30000</option>
+                        <option value=" ">₹ 25000</option>
+
+                    </select>
+                </div>
+                <div id="checkboxes">
+                    <div>
+                        <h4 style="font-size: 20px;color: rgb(107, 102, 102);">Segment</h4>
+                        <div>
+                            <input type="checkbox" value="">
+                            <label for="coding">Hackback(0)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">
+                            <label for="coding">Sadan(0)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">
+                            <label for="coding">SUV/MUV (5)</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 20px;color: rgb(107, 102, 102);">Fuel</h4>
+                        <div>
+                            <input type="checkbox" value="">
+                            <label for="coding">Diesel(4)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">
+                            <label for="coding">Petrol(1)</label>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h4 style="font-size: 20px;color: rgb(107, 102, 102);">transmission</h4>
+                        <div>
+                            <input type="checkbox" value="">
+                            <label for="coding">Automatic</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="">
+                            <label for="coding">Mannual</label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--navbaar of mahindra subscription-->
+    <div id="navbar">
+        <div id="innernav">
+            <div id="left-navbar">
+                <img class="logo" src="../mahindra_car/icons/revlogo.png" alt="revvlogo">
+
+                <img class="logo" src="../mahindra_car/icons/mahindra-logo-sub@2x.png" alt="mahindra-logo">
+
+            </div>
+            <div id="rightnav">
+                <a href="" , class="subscription-btn, wb"><b>How it works</b></a>
+                <a href="" , class="subscription-btn, wb"><b>FAQs</b></a>
+                <a href="" , class="subscription-btn, wb">
+                    <img class="loginlogo"
+                        src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" />
+                    <b>Login or Signup</b></a>
+            </div>
+        </div>
+    </div>
+    <!--end of navbbar-->
+
+    <!--footerwhite-->
+    <div id="foooter">
+        <div id="footerwhite">
+            <div id="footerleft">
+                <img src="../Social Media Handles/revlogo.png" alt="revvlogo">
+                <p>© 2022 Primemover Mobility Technologies Pvt Ltd. All rights reserved</p>
+            </div>
+            <div id="about_us">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Car Subscription</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Policy</a></li>
+                    <li><a href="">Blogs </a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Social</h3>
+                <div id="socialhandles">
+                    <a href=""><img src="../Social Media Handles/facebook.png" /></a>
+                    <a href=""><img src="../Social Media Handles/twitter.png" /></a>
+                    <a href=""><img src="../Social Media Handles/instagram.png" /></a>
+                    <a href=""><img src="../Social Media Handles/youtube.png" /></a>
+                    <a href=""><img src="../Social Media Handles/linkedin.png" /></a>
+                </div>
+                <h3>Download the Revv App</h3>
+                <a href="" , class="appbtn">
+                    <img class="logoelem"
+                        src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/appstore_apple.webp">
+                    <p>Download App Store</p>
+                </a>
+                <a href="" , class="appbtn">
+                    <img class="logoelem"
+                        src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/playstore_google.webp">
+                    <p>Download Google Play</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    // console.log("Hello");
+    /* <h1>5 Unboxed Mahindra cars for subscription in Mumbai</h1>
+ <div>
+     <img src="https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_Scorpio.jpg" alt="Scrpio">
+   <div>
+     <h2>Mahindra Scorpio</h2>
+     <p>Unboxed</p>
+     <p>Diesel   </p>
+ 
+   </div>
+   <div>
+     <h2>₹ 33,599/month</h2>
+     <h3>₹ 37,599    </h3>
+   </div>
+ </div>*/
+    //now craeting an object using js
+    var mahindraCarData = [
+        {
+            id: 1,
+            image_url: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_Scorpio.jpg",
+            name: "Mahindra Scorpio",
+            price: 33599,
+            StrikedoffPrice: "37,599",
+
+        },
+        {
+            id: 2,
+            image_url: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_marazzo.jpg",
+            name: "Mahindra Marazzo",
+            price: 23599,
+            StrikedoffPrice: "27,599",
+
+        },
+        {
+            id: 3,
+            image_url: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+            name: "Mahindra XUV300",
+            price: 31599,
+            StrikedoffPrice: "35,599",
+
+        },
+        {
+            id: 4,
+            image_url: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+            name: "Mahindra XUV500",
+            price: 23699,
+            StrikedoffPrice: "25,599",
+
+        },
+        {
+            id: 5,
+            image_url: "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_XUV_300.jpg",
+            name: "Mahindra XUV300",
+            price: 21599,
+            StrikedoffPrice: "25,599",
+
+        },
+        {
+            id: 6,
+            image_url: "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/Hatchback_new/Mahindra_KUV100.jpg",
+            name: "Mahindra KUV",
+            price: 20599,
+            StrikedoffPrice: "23,599",
+
+        },
+        {
+            id: 7,
+            image_url: "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_Alturas.jpg",
+            name: "Mahindra ALTURAS",
+            price: 71599,
+            StrikedoffPrice: "89,599",
+
+        },
+        {
+            id: 8,
+            image_url: "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/Hatchback_new/Mahindra_KUV100.jpg",
+            name: "Mahindra KUV",
+            price: 20599,
+            StrikedoffPrice: "23,599",
+
+        },
+    ]
+
+    //     mahindraCarData.map(function(elem){
+    //         // console.log(elem.price);
+
+    //     })
+
+    //    var sort= mahindraCarData.sort(function(a, b){
+    //         return (a.price-b.price)
+    //     })
+    // console.log(sort);
+    console.log(mahindraCarData)
+
+    // displayData();
+    // window.addEventListener("load", function(){
+    //     displayData(arr);
+    // })
+    localStorage.setItem("dataofcars", JSON.stringify(mahindraCarData));
+    var arr = JSON.parse(localStorage.getItem("dataofcars")) || [];
+    displayData(arr);
+    function displayData(mahindraCarData) {
+        document.getElementById("parent").innerHTML = "";
+        mahindraCarData.map(function (elem, index) {
+            var heading = document.createElement("h5");
+            heading.innerText = "Unboxed Mahindra cars for subscription in Mumbai"
+
+            // parent div
+            var div = document.createElement("div")
+            var image = document.createElement("img")
+            image.setAttribute("src", elem.image_url)
+            image.setAttribute("alt", index)
+            image.setAttribute("class", "image")
+            //   image.addEventListener("click", function(){
+            //   addtocart(index)})
+            //<button><a href="getting.html"> go to cart</a></button>
+            //   var anchor= document.createElement("a");
+            //   anchor.setAttribute("href","getting.html");
+
+            var div2 = document.createElement("div")
+            var h2 = document.createElement("h2")
+            h2.innerText = elem.name;
+            var para1 = document.createElement("p")
+            para1.innerText = "Unboxed";
+            var para = document.createElement("p")
+            para.innerText = "Diesel Mannual";
+            var divprice = document.createElement("div")
+            var price_head = document.createElement("h2")
+            price_head.innerText = "₹" + elem.price + "/month";
+            var stiked_price = document.createElement("h3")
+            stiked_price.innerText = "₹" + elem.StrikedoffPrice;
+            divprice.append(price_head, stiked_price);
+            div2.append(h2, para1, para)
+            div.append(image, div2, divprice);
+            document.getElementById("parent").append(div);
+        })
+    }
+    //    arr.push(mahindraCarData);
+    //    localStorage.setItem("dataofcars", JSON.stringify(mahindraCarData));
+
+
+
+    // /sort by price/
+    document.getElementById("sortPrice").addEventListener("change", handlePriceFilterSort)
+
+    function handlePriceFilterSort() {
+        var selected = document.getElementById("sortPrice").value;
+        console.log(selected);
+        if (selected === "htl") {
+            arr = arr.sort(function (a, b) {
+                return b.price - a.price;
+            })
+            console.log(arr);
+            displayData(arr);
+        }
+        else if (selected === "lth") {
+            arr = arr.sort(function (a, b) {
+                return a.price - b.price;
+            })
+            console.log(arr);
+            displayData(arr);
+
+        }
+    }
+
+//             //add to cart
+//             var cartarr=JSON.parse(localStorage.getItem("cart"))||[]
+//                  function addtocart(i){
+//           var product=mahindraCarData.filter(function(elem,index){
+//         return index==i;
+//     })
+//     cartarr.push(product[0]);
+//     console.log(product);
+//     localStorage.setItem("cart",JSON.stringify(cartarr));
+
+// }    
+
+</script>
