@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Hyundai Car Subscription</title>
+  <link rel="icon" type="image/x-icon" href="../hundai_car/icons/revlogo.png">
+  <style>
+    #box {
+
+      display: flex;
+      flex-direction: column;
+      /* border: 1px solid black; */
+      width: 65%;
+      margin-left: 20px;
+      margin-right: 8%;
+      margin-top: 10%;
+    }
+
+    #up_box {
+      display: flex;
+      justify-content: space-around;
+      /*  border: 1px solid rgb(241, 55, 55);*/
+
+    }
+
+    #down_box {
+      display: flex;
+      /*  border: 1px solid rgba(0, 16, 105, 0.493);*/
+      justify-content: space-around;
+
+    }
+
+    #down_box>div {
+      /* border: 1px solid   green  ;*/
+      width: 25%;
+      padding: 10px 20px;
+      gap: 30px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    img {
+      width: 30%;
+    }
+
+    #down_box>div:hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    h4 {
+      color: #aaa;
+    }
+
+    #down_box>div>h3 {
+      color: teal;
+      border-left: 2px solid teal;
+      width: 180px;
+
+
+
+    }
+
+    #box+h3 {
+      color: #aaa;
+    }
+
+    /*css of navbbar*/
+    /*nav bar*/
+    #logo {
+      width: 20%;
+    }
+
+    #navbar {
+      box-sizing: border-box;
+      background-color: white;
+      border: none;
+      padding: 8px;
+      box-shadow: 0px 0.5px 0px 0px rgb(202, 196, 196);
+      height: 4rem;
+      position: fixed;
+      /* Set the navbar to fixed position */
+      top: 0px;
+      /* Position the navbar at the top of the page */
+      width: 100%;
+      /* Full width */
+      display: flex;
+      justify-content: space-around;
+    }
+
+    #bold {
+      font-weight: 700;
+    }
+
+    #innernav {
+      width: 75%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .wb {
+      border: 1px solid white;
+      border-radius: 4px;
+      text-decoration: none;
+      padding: 8px;
+      margin: auto;
+      margin: 2px 20px;
+      color: black;
+    }
+
+    .loginlogo {
+      vertical-align: middle;
+      margin: 0px;
+      padding: 0px;
+      width: auto;
+    }
+
+    .wb:hover {
+      color: #1AC9B5;
+    }
+
+    .subscription-btn {
+
+      border-radius: 4px;
+      text-decoration: none;
+      padding: 6px;
+      margin: 5px 10px;
+      height: 40%;
+      vertical-align: middle;
+      color: black;
+    }
+
+
+    .subscription-btn:hover {
+      color: #1AC9B5;
+    }
+
+    #rightnav {
+      display: flex;
+      justify-content: space-evenly;
+
+
+    }
+
+    .btn_call {
+      color: #1AC9B5;
+      border-radius: 5px;
+      border: 1px solid #1AC9B5;
+      width: 100px;
+      height: 40px;
+    }
+
+    #innernav>div>img>a {
+      display: flex;
+      width: 40%;
+      border-left: 1px solid #aaa;
+    }
+
+    /*end of css navbaar    */
+    /*NAVBAAR*/
+
+    /*links*/
+    #links {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 1%;
+      box-shadow: 2px 2px 5px 5px rgb(235, 235, 235);
+      position: fixed;
+      /* Set the navbar to fixed position */
+      top: 50px;
+      /* Position the navbar at the top of the page */
+      width: 70%;
+      /* Full width */
+      background-color: white;
+      float: right;
+      margin-left: 35%;
+
+    }
+
+    #links>div {
+      display: flex;
+      list-style: none;
+    }
+
+    #links a {
+      text-decoration: none;
+      color: rgb(104, 100, 100);
+      font-size: 30px;
+    }
+
+    #link a:focus {
+      color: teal;
+    }
+
+    #sortsalary {
+      border: none;
+
+    }
+
+    
+
+
+       /*footer white*/
+#foooter{
+    width: 100%;
+    background-color: #F4F4F4;
+}
+#footerwhite{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    height: 100%;
+    gap: 2%;
+}
+#footerwhite a{
+    text-decoration: none;
+    color: #44484e;
+}
+#footerwhite div{
+    margin:50px;
+    /* border: 1px solid cyan; */
+}
+#footerleft > img{
+    width: 100%;
+}
+
+#footerwhite li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+#about_us li a:hover{
+  color:black;
+  font-weight: 700;
+}
+.appbtn{
+    width: 100%;
+    display: flex;
+    border: 1px solid #A8B5C0;
+    border-radius: 4px;
+    text-decoration: none;
+    vertical-align: middle;
+    color: black;
+    margin-bottom: 10px;
+    background-color:white;
+}
+
+.appbtn:hover{
+  background-color:rgb(20, 228, 228) ;
+}
+.logoelem{
+    height: 23px;
+    width: 23px;
+    object-fit: contain;
+    object-position: center;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 6px;
+}
+    /*SocialMediaHandles*/
+#socialhandles{
+    display: flex;
+    gap: 20px;
+}
+#socialhandles img{
+    width: 50px;
+    margin: auto;
+}
+#socialhandles img:hover{
+  background-color:rgb(20, 228, 228) ;
+}
+
+
+
+    /*left div*/
+    #left_div {
+      width: 25%;
+
+      /* border: 2px solid black; */
+      display: flex;
+      flex-direction: column;
+      padding: auto;
+
+
+
+      margin-top: 10%;
+
+
+    }
+
+    #up {
+      margin-top: 40px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      /*border: 1px solid red;*/
+      font-size: 12px;
+      margin-left: 15px;
+      color: rgb(141, 138, 138);
+      flex-wrap: wrap;
+    }
+
+    #container {
+      display: flex;
+      float: none;
+      margin: auto;
+    }
+
+    #container>div {
+      display: flex;
+      gap: 10px;
+      margin-left: 30px;
+    }
+
+
+    #filter {
+      color: rgb(122, 120, 120);
+      font-weight: bold;
+
+    }
+
+    #select {
+      font-weight: bold;
+      font-size: 18px;
+
+    }
+
+    #left_div>select {
+      border: none;
+      height: 20px;
+      border-bottom: 1px solid #aaa;
+      margin-top: 10px;
+    }
+
+    #price_range>select {
+      border: none;
+      border-bottom: 1px solid #aaa;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+    }
+
+    #checkboxes>div {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .input-icons {
+      width: 100%;
+      margin-bottom: 10px;
+      color: teal;
+
+    }
+
+    #popular_btn {
+      color: white;
+      align-items: center;
+      font-size: 20px;
+      margin-left: 35px;
+      margin-top: -10%;
+      background-color: #1AC9B5;
+      border: none;
+      width: 45%;
+      height: 30px;
+    }
+
+    /*navbaar*/
+
+    #navbar {
+      box-sizing: border-box;
+      background-color: white;
+      border: none;
+      padding: 8px;
+      box-shadow: 0px 0.5px 0px 0px rgb(202, 196, 196);
+      height: 4rem;
+      position: fixed;
+      /* Set the navbar to fixed position */
+      top: 0px;
+      /* Position the navbar at the top of the page */
+      width: 100%;
+      z-index: 1;
+      /* Full width */
+    }
+
+    #innernav {
+
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* left navbar */
+    #left-navbar {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+      justify-content: space-evenly;
+    }
+
+    .logo {
+      width: 37%;
+      height: 90%;
+    }
+
+    .logo:nth-child(2) {
+      height: 38%;
+      border-left: 1px solid rgb(105, 105, 105);
+      margin-left: 8px;
+      width: 52%;
+      padding: 8px 12px;
+    }
+
+
+    /* right nav */
+    #rightnav {
+      display: flex;
+      justify-content: space-evenly;
+
+
+    }
+
+    .wb {
+      border: 1px solid white;
+      border-radius: 4px;
+      text-decoration: none;
+      padding: 8px;
+      margin: auto;
+      margin: 2px 20px;
+      color: black;
+      font-family: Poppins;
+    }
+
+    .loginlogo {
+      vertical-align: middle;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .wb:hover {
+      color: #1AC9B5;
+    }
+
+    .subscription-btn {
+      border: 1px solid #A8B5C0;
+      border-radius: 4px;
+      text-decoration: none;
+      padding: 6px;
+      margin: 5px 20px;
+      height: 40%;
+      vertical-align: middle;
+      color: black;
+    }
+
+
+    .subscription-btn:hover {
+      color: #1AC9B5;
+    }
+  </style>
+
+<body>
+  <!--links-->
+  <div id="links">
+    <!--  <div style="display: flex;flex-direction:column ;"><a href="mahindraUsingJs.html"> <h2 style="font-size:20px;color: black;">Brand new car</h2></a>
+           
+            <p style="margin-top: -15px;"> specially for you</p>
+        </div>-->
+    <div><a href="hyuandai_new_car.html">Brand new car</a></div>
+    <div><a href="hyundai_unboxed.html">Unboxed Car</a></div>
+
+
+
+    <select style="border: none;" id="sortPrice" onchange=handlePriceFilterSort()>
+      <option value="">Sort By:</option>
+      <option value="hlt">High to low</option>
+      <option value="lth">low to high</option>
+    </select>
+
+  </div>
+
+  <!--navbaar of mahindra subscription-->
+  <div id="navbar">
+    <div id="innernav">
+      <div id="left-navbar">
+        <img class="logo" src="../hundai_car/icons/revlogo.png " alt="revvlogo">
+
+        <img class="logo" src="../hundai_car/icons/hyundai-logo-sub@2x.png" alt="hyundai-logo">
+
+      </div>
+      <div id="rightnav">
+        <a href="" , class="subscription-btn, wb"><b>How it works</b></a>
+        <a href="" , class="subscription-btn, wb"><b>FAQs</b></a>
+        <a href="" , class="subscription-btn, wb">
+          <img class="loginlogo" src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" />
+          <b>Login or Signup</b></a>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <div id="left_div">
+      <div id="up">
+        <p><a href=""></a>Home > </p>
+        <p><a href="mahindraUsingJs.html"></a>Hyundai Subscription ></p>
+        <p><a href=""></a>unboxed cars</p>
+      </div>
+      <div id="filter">
+        <h3><b>Filter By</b></h3>
+
+        <h3>City</h3>
+      </div>
+      <select name="" id="select-city">
+        <option value="">Select city</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Delhi-NCR">Delhi-NCR</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Pune">Pune</option>
+        <option value="">Other Cities</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Bhubaneswar">Bhubaneswar</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Coimbatore">Coimbatore</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Kochi">Kochi</option>
+        <option value="Mangalore">Mangalore</option>
+        <option value="Mysore">Mysore</option>
+        <option value="Nagpur">Nagpur</option>
+        <option value="Surat">Surat</option>
+        <option value="Tirupati">Tirupati</option>
+        <option value="Trivandrum">Trivandrum</option>
+        <option value="Vadodara">Vadodara</option>
+        <option value="Vijayawada">Vijayawada</option>
+        <option value="Vizag">Vizag</option>
+      </select>
+      <P style="font-size: 20px;color: rgb(126, 123, 123);font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Search</P>
+
+      <div class="input_icons">
+        <i class="fa fa-search"></i>
+        <input style="height: 30px; " type="text" placeholder="Search by Car Model" />
+      </div>
+      <div id="price_range">
+        <P style="font-size: 20px;margin-top: 25px;margin-bottom: 25px;">Price Range</P>
+        <div>
+          <select
+            style="height: 30px;width: 40%;border: none; border-bottom: 1px solid #aaa;margin-right: 10px ;font-weight: bold;font-size: 18px;">
+
+            <label for="">min</label>
+            <option value=" "><b>₹20000</b> </option>
+            <option value=" ">₹ 25000</option>
+            <option value=" ">₹ 30000</option>
+
+          </select>
+          <select
+            style="height: 30px;width: 40%;border: none; border-bottom: 1px solid #aaa;font-weight: bold;font-size: 18px; ">
+
+            <p>min</p>
+            <option value=" ">₹ 35000</option>
+            <option value=" ">₹ 30000</option>
+            <option value=" ">₹ 25000</option>
+
+          </select>
+        </div>
+        <div id="checkboxes">
+          <div>
+            <h4 style="font-size: 20px;color: rgb(107, 102, 102);">Segment</h4>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">Hackback(0)</label>
+            </div>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">Sadan(0)</label>
+            </div>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">SUV/MUV (5)</label>
+            </div>
+          </div>
+          <div>
+            <h4 style="font-size: 20px;color: rgb(107, 102, 102);">Fuel</h4>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">Diesel(4)</label>
+            </div>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">Petrol(1)</label>
+            </div>
+
+          </div>
+          <div>
+            <h4 style="font-size: 20px;color: rgb(107, 102, 102);">transmission</h4>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">Automatic</label>
+            </div>
+            <div>
+              <input type="checkbox" value="">
+              <label for="coding">Mannual</label>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- var mahindraCarData = [
+{
+    id: 1,
+    image_url: " https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/hyundai_santro.jpg  ",
+    name: "Hyuandai santro",
+    price: 19999,
+    StrikedoffPrice: "21,599",
+    fuel_type:"petrol&Automatic",
+    
+
+
+},
+{
+    id: 2,
+    image_url: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Hyundai_creta.jpg",
+    name: "Hyuandai Creta",
+    price: 32000,
+    StrikedoffPrice: "35,599",
+    fuel_type:"Diesal&Automatic",
+
+},
+{
+    id: 3,
+    image_url: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/hyundai_santro.jpg",
+    name: "Hyuandai Santro",
+    price: 21999,
+    StrikedoffPrice: "22,599",
+    fuel_type:"Diesal&Automatic",
+    
+
+},
+{
+    id: 4,
+    image_url: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Hyundai_grand_i10.jpg",
+    name: "Hyuandai Grandi10",
+    price: 23699,
+    StrikedoffPrice: "25,599",
+    fuel_type:"Diesal&Automatic",
+
+},
+{
+    id: 5,
+    image_url: "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/Sedan_new/Hyundai_verna.jpg",
+    name: "Hyuandai Verna",
+    price: 21599,
+    StrikedoffPrice: "25,599",
+    fuel_type:"Diesal&Manual",
+
+},
+{
+    id: 6,
+    image_url: "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Hyundai_Venue.jpg",
+    name: "Hyuandai Venue",
+    price: 20599,
+    StrikedoffPrice: "23,599",
+    fuel_type:"Petrol&Automatic",
+
+},
+{
+    id: 7,
+    image_url: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Hyundai_elite_i20.jpg",
+    name: "Hyuandai Elite i20",
+    price: 20599,
+    StrikedoffPrice: "25,599",
+    fuel_type:"Diesal&Manual",
+
+},
+{
+    id: 8,
+    image_url: "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Hyundai_creta.jpg",
+    name: "Hyuandai Creta",
+    price: 20599,
+    StrikedoffPrice: "23,599",
+    fuel_type:"Diesal&Automatic",
+
+},
+]-->
+
+    <div id="box">
+      <h3 style="color: #aaa;font-size:18px;">10 Brand new Hyundai cars for subscription in Mumbai</h3>
+      <div id="up_box">
+        <img src="https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/hyundai_santro.jpg" />
+        <div>
+
+          <h2>Hyundai Santro</h2>
+          <p>Brand New / 3 Variants</p>
+        </div>
+      </div>
+      <div id="down_box">
+
+        <div>
+
+          <h4>Hyundai Santro</h4>
+          <h3>Magna AMT</h3>
+          <p>Petrol Automatic</p>
+          <h2>₹16,500/month</h2>
+          <h4>₹19,500</h4>
+        </div>
+        <div>
+          <button id="popular_btn">popular</button>
+          <h4>Hyundai Santro</h4>
+          <h3>sportz</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹33,500/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+        <div>
+          <button id="popular_btn">popular</button>
+          <h4>Hyundai Santro </h4>
+          <h3>Magna</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹33,500/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+      </div>
+
+      <div id="up_box">
+        <img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/Hatchback_new/Elite-i20_.jpg" />
+        <div>
+          <h2>Hyundai Elite i20</h2>
+          <p>Brand New / 3 Variants</p>
+        </div>
+      </div>
+      <div id="down_box">
+        <div>
+          <button id="popular_btn">popular</button>
+          <h4>Hyundai Elite i20</h4>
+          <h3>Magna + Diesel</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹33,500/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+        <div>
+          <button id="popular_btn">popular</button>
+          <h4>Hyundai XUV500</h4>
+          <h3>Sportz +</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹33,500/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+        <div>
+          <button id="popular_btn">popular</button>
+          <h4>Mahindra XUV500</h4>
+          <h3>Magna AMT</h3>
+          <p>Petrol Automatic</p>
+          <h2>₹33,500/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+      </div>
+      <div id="up_box">
+        <img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/carImages/new_images/Hyundai_Aura.jpg" />
+        <div>
+          <h2>Hyundai Aura </h2>
+          <p>Brand New / 2 Variants</p>
+        </div>
+      </div>
+      <div id="down_box">
+        <div>
+          <h4>Hyundai Aura</h4>
+          <h3>Kappa SX</h3>
+          <p>Petrol Mannual</p>
+          <h2>₹34,500/month</h2>
+          <h4>₹38,500</h4>
+        </div>
+        <div>
+          <h4>Hyundai Aura</h4>
+          <h3>Kappa S</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹30,500/month</h2>
+          <h4>₹31,500</h4>
+        </div>
+        <div>
+          <button id="popular_btn">popular</button>
+          <h4>Hyundai Aura</h4>
+          <h3>AMT KAPPA S</h3>
+          <p>Petrol Automatic</p>
+          <h2>₹33,500/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+      </div>
+      <div id="up_box">
+        <img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Hyundai_Venue.jpg" />
+        <div>
+          <h2>Hyundai Venue</h2>
+          <p>Brand New / 3 Variants</p>
+        </div>
+      </div>
+      <div id="down_box">
+        <div>
+          <h4>Hyundai Venue</h4>
+          <h3>Turbo S</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹30,599/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+        <div>
+          <h4>Hyundai Venue</h4>
+          <h3>CRDI 1.5</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹26,000/month</h2>
+          <h4>₹27,500</h4>
+        </div>
+        <div>
+          <button id="popular_btn">popular</button>
+          <h4>Hyundai Venue</h4>
+          <h3>VTVT 1.5</h3>
+          <p>Petrol Mannual</p>
+          <h2>₹33,500/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+      </div>
+      <div id="up_box">
+        <img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Creta.jpg" />
+        <div>
+          <h2>Hyundai Creta</h2>
+          <p>Brand New / 3 Variants</p>
+        </div>
+      </div>
+      <div id="down_box">
+        <div>
+          <h4>Hyundai Creta</h4>
+          <h3>S7</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹30,600/month</h2>
+          <h4>₹35,500</h4>
+        </div>
+        <div>
+          <h4>Hyundai Creta</h4>
+          <h3>S5</h3>
+          <p>Diesel Mannual</p>
+          <h2>₹34,599/month</h2>
+          <h4>₹38,500</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  </div>
+  
+
+
+  <!--footerwhite-->
+  <div id="foooter">
+    <div id="footerwhite">
+      <div id="footerleft">
+        <img src="../Social Media Handles/revlogo.png" alt="revvlogo">
+        <p>© 2022 Primemover Mobility Technologies Pvt Ltd. All rights reserved</p>
+      </div>
+      <div id="about_us">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Car Subscription</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Policy</a></li>
+          <li><a href="">Blogs </a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <div id="socialhandles">
+          <a href=""><img src="../Social Media Handles/facebook.png" /></a>
+          <a href=""><img src="../Social Media Handles/twitter.png" /></a>
+          <a href=""><img src="../Social Media Handles/instagram.png" /></a>
+          <a href=""><img src="../Social Media Handles/youtube.png" /></a>
+          <a href=""><img src="../Social Media Handles/linkedin.png" /></a>
+        </div>
+        <h3>Download the Revv App</h3>
+        <a href="" , class="appbtn">
+          <img class="logoelem"
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/appstore_apple.webp">
+          <p>Download App Store</p>
+        </a>
+        <a href="" , class="appbtn">
+          <img class="logoelem"
+            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/playstore_google.webp">
+          <p>Download Google Play</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

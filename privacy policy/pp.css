@@ -1,0 +1,273 @@
+/*nav bar*/
+#logo{
+    width: 10%;
+}
+#navbar {
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    padding: 8px;
+    box-shadow: 0px 0.5px 0px 0px rgb(202, 196, 196);
+    height: 4rem;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0px; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+#bold{
+    font-weight: 700;
+}
+#innernav {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.wb{
+    border: 1px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px;
+    margin: auto;
+    margin: 2px 20px;
+    color: black;
+}
+.loginlogo{
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+}
+.wb:hover{
+    color:#1AC9B5;
+}
+.subscription-btn{
+    border: 1px solid #A8B5C0;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 6px;
+    margin: 5px 20px;
+    height: 40%;
+    vertical-align: middle;
+    color: black;
+}
+
+
+.subscription-btn:hover{
+    color: #1AC9B5;
+}
+#rightnav {
+    display: flex;
+    justify-content:space-evenly;
+
+}
+#parent {
+    /* border: 2px dashed crimson; */
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    font-size: 17px;
+}
+
+#parent > div {
+    margin: 10px;
+}
+
+#child1 {
+    width: 25%;
+    position:relative;
+}
+#child1 a {
+    text-decoration: none;
+    color: #212529;
+}
+
+#child2 {
+    /* border: 1px solid darkgreen; */
+    width: 60%;
+}
+
+#child1 > div {
+    width: 80%;
+    margin: 5px;
+    text-align: left;
+    padding: 20px;
+    line-height: 1.5;
+    color: #212529;
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-family: sans-serif;
+}
+
+h2 {
+    padding: 10px;
+    color: #444647;
+    font-size: 1.8rem;
+}
+
+h4 {
+    padding: 10px;
+    color: #4cc5bf;
+    font-size: 1.4rem;
+    /* place-content: end; */
+    /* justify-content: end; */
+}
+.summary{
+    list-style-type: none;
+}
+
+#gc1 >div {
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: 15px;
+    text-align: left;
+    padding: 22px;
+    margin-top: 30px;
+    line-height: 1.5;
+    color: #212529;
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 1rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+#gc2> div {
+    width: 90%;
+    margin: 15px;
+    text-align: left;
+    padding: 22px;
+    margin-top: 30px;
+    line-height: 1.5;
+    color: #212529;
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 1rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+#gc3> div {
+    width: 90%;
+    margin: 15px;
+    text-align: left;
+    padding: 22px;
+    margin-top: 30px;
+    line-height: 1.5;
+    color: #212529;
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 1rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    font-family: sans-serif;
+    border-radius: 5px;
+} 
+    #gc4> div {
+    width: 90%;
+    margin: 15px;
+    text-align: left;
+    padding: 22px;
+    margin-top: 30px;
+    line-height: 1.5;
+    color: #212529;
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 1rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+#servicablecities{
+    background-color: #2A2B36;
+    width: 100%;
+    margin: auto;
+}
+#servicablecities h1{
+    margin: 35px;
+    padding-top: 35px;
+    color: white;
+}
+#servicableinnerbox {
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px 20px 20px;
+}
+#citieslist > div{
+padding-bottom: 3px;
+}
+#citieslist a{
+    text-decoration: none;
+    margin: auto;
+    color:#74747B;
+}
+#citieslist a:hover {
+    text-decoration: none;
+    margin: auto;
+    color: white;
+}
+/*footer white*/
+#foooter{
+    width: 100%;
+    background-color: #F4F4F4;
+}
+#footerwhite{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    height: 100%;
+    gap: 2%;
+}
+#footerwhite a{
+    text-decoration: none;
+    color: #44484e;
+}
+#footerwhite div{
+    margin:50px;
+}
+#footerleft > img{
+    width: 30%;
+}
+
+#footerwhite li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+#footerwhite li:hover{
+    color: black;
+}
+.appbtn{
+    width: 100%;
+    display: flex;
+    border: 1px solid #A8B5C0;
+    border-radius: 4px;
+    text-decoration: none;
+    vertical-align: middle;
+    color: black;
+    margin-bottom: 10px;
+}
+.logoelem{
+    height: 23px;
+    width: 23px;
+    object-fit: contain;
+    object-position: center;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 6px;
+}
+/*SocialMediaHandles*/
+#socialhandles{
+    display: flex;
+    gap: 20px;
+}
+#socialhandles img{
+    width: 50px;
+    margin: auto;
+}

@@ -1,0 +1,314 @@
+/*nav bar*/
+#logo{
+    width: 10%;
+}
+#navbar {
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    padding: 8px;
+    box-shadow: 0px 0.5px 0px 0px rgb(202, 196, 196);
+    height: 4rem;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0px; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+#bold{
+    font-weight: 700;
+}
+#innernav {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.wb{
+    border: 1px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px;
+    margin: auto;
+    margin: 2px 20px;
+    color: black;
+}
+.loginlogo{
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+}
+.wb:hover{
+    color:#1AC9B5;
+}
+.subscription-btn{
+    border: 1px solid #A8B5C0;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 6px;
+    margin: 5px 20px;
+    height: 40%;
+    vertical-align: middle;
+    color: black;
+}
+
+
+.subscription-btn:hover{
+    color: #1AC9B5;
+}
+#rightnav {
+    display: flex;
+    justify-content:space-evenly;
+
+}   
+#parent{
+    width: 75%;
+    padding-top: 60px;
+    margin: auto;
+    text-align: center;
+
+
+}
+#carDetails{
+    display: flex;
+    justify-content: space-between;
+    /* height: 200px; */
+}
+#leftdiv{
+    width:60%;
+    height:50%;
+}
+#rightdiv{
+    width:40%;
+    /* height: 50%; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.image{
+    width:100%;
+}
+#stikedPrice{
+    text-decoration: line-through;
+}
+#button{
+    width:80%;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #1caaa2;
+    border-radius: 5px;
+    display: block;
+    margin: 50px;
+
+}
+/*footer white*/
+#foooter{
+    width: 100%;
+    background-color: #F4F4F4;
+}
+#footerwhite{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    height: 100%;
+    gap: 2%;
+}
+#footerwhite a{
+    text-decoration: none;
+    color: #44484e;
+}
+#footerwhite div{
+    margin:50px;
+}
+#footerleft > img{
+    width: 30%;
+}
+
+#footerwhite li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+#footerwhite li:hover{
+    color: black;
+}
+.appbtn{
+    width: 100%;
+    display: flex;
+    border-radius: 4px;
+    text-decoration: none;
+    vertical-align: middle;
+    color: black;
+    margin-bottom: 10px;
+}
+.logoelem{
+    height: 23px;
+    width: 23px;
+    object-fit: contain;
+    object-position: center;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 6px;
+}
+/*SocialMediaHandles*/
+#socialhandles{
+    display: flex;
+    gap: 20px;
+}
+#socialhandles img{
+    width: 50px;
+    margin: auto;
+}
+/* blueboxinner */
+#bluebox{
+    width: 100%;
+    background: rgb(28,127,171);
+background: linear-gradient(56deg, rgba(28,127,171,1) 0%, rgba(28,171,162,1) 100%);
+color: white;
+}
+#blueboxleft{
+    width: 50%;
+}
+#blueboxright{
+    width: 50%;
+}
+#blueboxinner{
+    width:75%;
+    display: flex;
+    margin: auto;
+    padding-bottom: 30px;
+}
+#bbrow{
+    display: flex;
+    margin: auto;
+}
+#bbele{
+    width: 33%;
+    padding-right: 100px;
+}
+#insuarance{
+    width: 100%;
+}
+#insuaranceinner{
+    width:75%;
+    display: flex;
+    margin: auto;
+    padding-bottom: 30px;
+}
+#inrow{
+    display: flex;
+    margin: auto;
+}
+#inele{
+    width: 33%;
+    padding-right: 100px;
+}
+#insuaranceleft{
+    width: 50%;
+}
+#insuaranceright{
+    width: 50%;
+}
+#cb{
+    width: 100%;
+    background-color: #F9F9F9;
+}
+#cbinner{
+    width: 75%;
+    margin: auto;
+}
+#cbleft{
+    width: 50%;
+}
+#cbrigh{
+    width: 50%;
+}
+#co{
+    width: 100%;
+}
+#coinner{
+    width: 75%;
+    margin: auto;
+}
+#coleft{
+    width: 50%;
+}
+#coright{
+    width: 50%;
+}
+#proshow{
+    width: 100%;
+}
+#proinner{
+    width: 75%;
+    margin: auto;
+}
+#prol{
+    width: 50%;
+}
+#pror{
+    width: 50%;
+}
+/*slider*/
+#sliderhead >h2{
+    color: black;
+    font-weight: 500px;
+}
+.parent{
+    display: flex;
+    align-items: center;
+}
+#sliderhead{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+} 
+#childinner{
+    display: flex;
+    margin: auto;
+}
+#leftarrow, #rightarrow{
+    cursor: pointer;
+} 
+#controls{
+  margin: auto 0px;
+}
+#slider{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius:5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+#slidertop{
+    display: flex;
+    justify-content: space-between;
+}
+#slides{
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+}
+#slides ::-webkit-scrollbar{
+    visibility: hidden;
+}
+#cs1{
+    width: 100%;
+}
+#cs2{
+    width: 100%;
+}
+#slides > div{
+    min-width: 28%;
+    margin: 30px;
+}
+#controls{
+    margin: auto 0px;
+}
+#leftimg {
+    margin: 10px;
+}
+.child{
+    width: 32%;
+    margin: auto;
+    display: none;
+}
