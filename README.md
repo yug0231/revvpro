@@ -44,7 +44,8 @@ We have used to add logical functionalities to the web pages like the on Click f
 ## Payment Details :
 ![Screenshot (1950)](https://user-images.githubusercontent.com/108898197/202384357-751013bd-f7cb-4dc7-b7a6-6ea85b506dd4.png)
 
-## View Demo [Revv Clone](https://dazzling-pony-c55ac0.netlify.app/)
+##  Demo
+<a href="https://dazzling-pony-c55ac0.netlify.app/" target="_blank">View Demo</a>
 
 # Team Member :
 ### Suraj Yadav
