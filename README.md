@@ -45,7 +45,9 @@ We have used to add logical functionalities to the web pages like the on Click f
 ![Screenshot (1950)](https://user-images.githubusercontent.com/108898197/202384357-751013bd-f7cb-4dc7-b7a6-6ea85b506dd4.png)
 
 ##  Demo
-<a href="https://dazzling-pony-c55ac0.netlify.app/" target="_blank">View Demo</a>
+
+  <a href="[https://surajyportfolio.netlify.app/](https://dazzling-pony-c55ac0.netlify.app/)" target="_blank"><img align="center" src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Revv-clone" /></a>
+
 
 # Team Member :
 ### Suraj Yadav
